@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "title": "Développeur Frontend",
+    "subtitle": "Créer des expériences web modernes et rapides."
+  },
+
+  "navbar": {
+    "home": "Accueil",
+    "about": "À propos",
+    "projects": "Projets",
+    "certificates": "Certificats",
+    "contact": "Contact"
+  }
+}

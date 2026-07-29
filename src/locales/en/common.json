@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "title": "Frontend Web Developer",
+    "subtitle": "Building modern, fast and beautiful web experiences."
+  },
+
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "certificates": "Certificates",
+    "contact": "Contact"
+  }
+}
