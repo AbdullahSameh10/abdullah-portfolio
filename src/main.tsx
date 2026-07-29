@@ -5,9 +5,12 @@ import App from "./App";
 import "./index.css";
 
 import "@I18n/index";
+import { ThemeProvider } from "@Context/index";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>,
 );

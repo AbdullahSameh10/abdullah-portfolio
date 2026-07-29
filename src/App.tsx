@@ -1,20 +1,35 @@
-import { useTranslation } from "react-i18next";
+import useTheme from "@Hooks/useTheme";
 
 export default function App() {
-  const { t, i18n } = useTranslation();
+  const { theme, resolvedTheme, setTheme } = useTheme();
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-5">
-      <h1 className="text-4xl font-bold">{t("hero.title")}</h1>
+    <div className="flex min-h-screen flex-col items-center justify-center gap-6">
+      <h1 className="text-5xl font-bold">{resolvedTheme.toUpperCase()} MODE</h1>
 
-      <p>{t("hero.subtitle")}</p>
+      <p>Current setting: {theme}</p>
 
       <div className="flex gap-4">
-        <button onClick={() => i18n.changeLanguage("en")}>English</button>
+        <button
+          onClick={() => setTheme("light")}
+          className="rounded-lg border px-5 py-2"
+        >
+          Light
+        </button>
 
-        <button onClick={() => i18n.changeLanguage("ar")}>العربية</button>
+        <button
+          onClick={() => setTheme("dark")}
+          className="rounded-lg border px-5 py-2"
+        >
+          Dark
+        </button>
 
-        <button onClick={() => i18n.changeLanguage("fr")}>Français</button>
+        <button
+          onClick={() => setTheme("system")}
+          className="rounded-lg border px-5 py-2"
+        >
+          System
+        </button>
       </div>
     </div>
   );

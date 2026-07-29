@@ -11,8 +11,6 @@
     "baseUrl": "./src",
 
     "paths": {
-      "@/*": ["*"],
-
       "@Assets/*": ["assets/*"],
       "@Components/*": ["components/*"],
       "@Layouts/*": ["layouts/*"],
@@ -25,7 +23,9 @@
       "@Services/*": ["services/*"],
       "@Styles/*": ["styles/*"],
       "@Locales/*": ["locales/*"],
-      "@I18n/*": ["i18n/*"]
+      "@I18n/*": ["i18n/*"],
+      
+      "@/*": ["*"],
     },
 
     "moduleResolution": "bundler",
