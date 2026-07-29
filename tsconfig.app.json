@@ -1,26 +1,44 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "es2023",
-    "lib": ["ES2023", "DOM"],
-    "module": "esnext",
-    "types": ["vite/client"],
-    "allowArbitraryExtensions": true,
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
     "skipLibCheck": true,
 
-    /* Bundler mode */
+    "ignoreDeprecations": "6.0",
+
+    "baseUrl": "./src",
+
+    "paths": {
+      "@/*": ["*"],
+
+      "@Assets/*": ["assets/*"],
+      "@Components/*": ["components/*"],
+      "@Layouts/*": ["layouts/*"],
+      "@Pages/*": ["pages/*"],
+      "@Hooks/*": ["hooks/*"],
+      "@Utils/*": ["utils/*"],
+      "@Data/*": ["data/*"],
+      "@Context/*": ["context/*"],
+      "@Types/*": ["types/*"],
+      "@Services/*": ["services/*"],
+      "@Styles/*": ["styles/*"],
+      "@Locales/*": ["locales/*"],
+      "@I18n/*": ["i18n/*"]
+    },
+
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
+
     "jsx": "react-jsx",
 
-    /* Linting */
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "strict": true
   },
+
   "include": ["src"]
 }

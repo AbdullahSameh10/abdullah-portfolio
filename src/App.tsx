@@ -1,7 +1,5 @@
+import { test } from "@Utils/test";
+
 export default function App() {
-  return (
-    <div>
-      <h1>Abdullah Sameh Portfolio</h1>
-    </div>
-  );
+  return <h1>{test}</h1>;
 }
