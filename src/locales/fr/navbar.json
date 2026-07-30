@@ -2,8 +2,12 @@
   "home": "Accueil",
   "about": "À propos",
   "skills": "Compétences",
-  "experience": "Expériences",
+  "experience": "Expérience",
   "projects": "Projets",
-  "certificates": "Certifications",
-  "contact": "Contact"
+  "certificates": "Certificats",
+  "contact": "Contact",
+  "language": "Langue",
+  "theme": "Thème",
+  "openMenu": "Ouvrir le menu",
+  "closeMenu": "Fermer le menu"
 }

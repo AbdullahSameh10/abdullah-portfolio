@@ -5,5 +5,9 @@
   "experience": "Experience",
   "projects": "Projects",
   "certificates": "Certificates",
-  "contact": "Contact"
+  "contact": "Contact",
+  "language": "Language",
+  "theme": "Theme",
+  "openMenu": "Open navigation menu",
+  "closeMenu": "Close navigation menu"
 }

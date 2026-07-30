@@ -5,5 +5,9 @@
   "experience": "الخبرات",
   "projects": "المشاريع",
   "certificates": "الشهادات",
-  "contact": "تواصل"
+  "contact": "تواصل",
+  "language": "اللغة",
+  "theme": "المظهر",
+  "openMenu": "فتح القائمة",
+  "closeMenu": "إغلاق القائمة"
 }
