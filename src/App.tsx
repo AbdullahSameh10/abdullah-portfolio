@@ -1,10 +1,12 @@
-import useTheme from "@Hooks/useTheme";
+import {Logo} from "@Assets/index";
+import {useTheme} from "@Hooks/index";
 
 export default function App() {
   const { theme, resolvedTheme, setTheme } = useTheme();
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-6">
+      <Logo/>
       <h1 className="text-5xl font-bold">{resolvedTheme.toUpperCase()} MODE</h1>
 
       <p>Current setting: {theme}</p>
