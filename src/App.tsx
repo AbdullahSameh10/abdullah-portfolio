@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center gap-6">
-      <Logo/>
+      <Logo />
       <h1 className="text-5xl font-bold">{resolvedTheme.toUpperCase()} MODE</h1>
 
       <p>Current setting: {theme}</p>

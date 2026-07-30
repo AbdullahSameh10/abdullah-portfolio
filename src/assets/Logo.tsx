@@ -1,5 +1,3 @@
-import styles from "@/globals.module.css";
-
 interface LogoProps {
   compact?: boolean;
 }
@@ -7,34 +5,44 @@ interface LogoProps {
 export default function Logo({ compact = false }: LogoProps) {
   return (
     <div
-      //   to="/"
-      className="group flex items-center gap-3 select-none"
+      className="group flex scale-75 items-center gap-5 select-none cursor-pointer transition-transform duration-300 active:scale-95"
       aria-label="Abdullah Sameh"
     >
       {/* Logo Mark */}
-      <div className="relative flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl border border-slate-300 bg-white shadow-sm transition-all duration-300 group-hover:-translate-y-0.5 group-hover:shadow-lg dark:border-slate-700 dark:bg-slate-900">
-        {/* Accent Glow */}
-        <div className="absolute inset-0 bg-linear-to-br from-sky-500/10 via-blue-500/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="relative flex h-16 w-17.5 items-center justify-center overflow-hidden rounded-2xl border-2 border-sky-500/70 bg-white shadow-md transition-all duration-300 dark:border-sky-400/70 dark:bg-slate-950">
+        {/* Glow */}
+        <div className="absolute inset-0 bg-linear-to-br from-sky-500/15 via-blue-500/10 to-transparent transition-opacity duration-300 opacity-100" />
 
         {/* Initials */}
-        <span
-          className={`${styles.logo} relative text-lg font-extrabold tracking-tight`}
-        >
-          <span className="text-sky-500">A</span>
-          <span className="text-slate-900 dark:text-white">S</span>
-        </span>
+        <div className="font-sansation relative h-9 w-9">
+          {/* S (Behind) */}
+          <span className="absolute top-1/2 left-[40%] -translate-y-1/2 text-4xl leading-none font-bold text-slate-900 dark:text-white">
+            S
+          </span>
+
+          {/* A (Front) */}
+          <span className="absolute top-1/2 left-0 z-10 -translate-y-1/2 text-4xl leading-none font-bold text-sky-500">
+            A
+          </span>
+        </div>
       </div>
 
       {!compact && (
-        <div className="leading-tight">
-          <h1 className="text-base font-bold tracking-tight text-slate-900 transition-colors duration-300 group-hover:text-sky-500 dark:text-white">
-            Abdullah Sameh
-          </h1>
+        <>
+          {/* Divider */}
+          <div className="h-12 w-px bg-slate-300 dark:bg-slate-700" />
 
-          <p className="text-xs font-medium tracking-wide text-slate-500 dark:text-slate-400">
-            Frontend Web Developer
-          </p>
-        </div>
+          {/* Text */}
+          <div className="flex flex-col justify-center">
+            <h1 className="text-3xl font-semibold tracking-tight text-slate-900 transition-colors duration-300 dark:text-white">
+              <span className="text-sky-500">Abdullah</span> Sameh
+            </h1>
+
+            <p className="mt-1 text-[11px] text-center font-medium tracking-[0.45em] text-slate-500 uppercase dark:text-slate-400">
+              Frontend Developer
+            </p>
+          </div>
+        </>
       )}
     </div>
   );

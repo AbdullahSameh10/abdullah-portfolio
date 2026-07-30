@@ -1,14 +1,14 @@
 {
-  "hero": {
-    "title": "Développeur Frontend",
-    "subtitle": "Créer des expériences web modernes et rapides."
-  },
-
-  "navbar": {
-    "home": "Accueil",
-    "about": "À propos",
-    "projects": "Projets",
-    "certificates": "Certificats",
-    "contact": "Contact"
-  }
+  "downloadCV": "Télécharger le CV",
+  "hireMe": "Me recruter",
+  "learnMore": "En savoir plus",
+  "loading": "Chargement...",
+  "comingSoon": "Bientôt disponible",
+  "readMore": "Lire la suite",
+  "viewProject": "Voir le projet",
+  "liveDemo": "Démo en direct",
+  "github": "GitHub",
+  "cancel": "Annuler",
+  "close": "Fermer",
+  "send": "Envoyer"
 }

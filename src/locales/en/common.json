@@ -1,14 +1,14 @@
 {
-  "hero": {
-    "title": "Frontend Web Developer",
-    "subtitle": "Building modern, fast and beautiful web experiences."
-  },
-
-  "navbar": {
-    "home": "Home",
-    "about": "About",
-    "projects": "Projects",
-    "certificates": "Certificates",
-    "contact": "Contact"
-  }
+  "downloadCV": "Download CV",
+  "hireMe": "Hire Me",
+  "learnMore": "Learn More",
+  "loading": "Loading...",
+  "comingSoon": "Coming Soon",
+  "readMore": "Read More",
+  "viewProject": "View Project",
+  "liveDemo": "Live Demo",
+  "github": "GitHub",
+  "cancel": "Cancel",
+  "close": "Close",
+  "send": "Send"
 }

@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sansation: "Sansation", sans-serif;
+}
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 * {

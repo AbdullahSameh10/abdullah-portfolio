@@ -1,14 +1,14 @@
 {
-  "hero": {
-    "title": "مطور واجهات أمامية",
-    "subtitle": "أبني مواقع ويب حديثة وسريعة واحترافية."
-  },
-
-  "navbar": {
-    "home": "الرئيسية",
-    "about": "نبذة عني",
-    "projects": "المشاريع",
-    "certificates": "الشهادات",
-    "contact": "تواصل"
-  }
+  "downloadCV": "تحميل السيرة الذاتية",
+  "hireMe": "توظيفي",
+  "learnMore": "معرفة المزيد",
+  "loading": "جاري التحميل...",
+  "comingSoon": "قريباً",
+  "readMore": "اقرأ المزيد",
+  "viewProject": "عرض المشروع",
+  "liveDemo": "عرض مباشر",
+  "github": "GitHub",
+  "cancel": "إلغاء",
+  "close": "إغلاق",
+  "send": "إرسال"
 }
