@@ -6,8 +6,10 @@
   "projects": "Projects",
   "certificates": "Certificates",
   "contact": "Contact",
-  "language": "Language",
   "theme": "Theme",
   "openMenu": "Open navigation menu",
-  "closeMenu": "Close navigation menu"
+  "closeMenu": "Close navigation menu",
+  "language": {
+    "title": "SELECT LANGUAGE"
+  }
 }

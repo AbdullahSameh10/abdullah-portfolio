@@ -20,14 +20,6 @@ export const navigationItems: NavigationItem[] = [
     href: "#about",
   },
   {
-    key: "skills",
-    href: "#skills",
-  },
-  {
-    key: "experience",
-    href: "#experience",
-  },
-  {
     key: "projects",
     href: "#projects",
   },

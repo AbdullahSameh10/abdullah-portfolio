@@ -1,4 +1,4 @@
-import { Laptop, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import useTheme from "@Hooks/useTheme";
 import type { Theme } from "@Types/index";
 import { useTranslation } from "react-i18next";
@@ -14,10 +14,6 @@ const themes: {
     icon: Sun,
   },
   {
-    value: "system",
-    icon: Laptop,
-  },
-  {
     value: "dark",
     icon: Moon,
   },
@@ -31,7 +27,7 @@ export default function ThemeSwitcher() {
     <div
       role="group"
       aria-label={t("switcher")}
-      className="flex items-center rounded-full border border-slate-200 bg-slate-100 p-1 dark:border-slate-700 dark:bg-slate-800/70"
+      className="flex items-center rounded-full gap-1 border border-slate-200 bg-slate-100 p-1 dark:border-slate-700 dark:bg-slate-800/70"
     >
       {themes.map(({ value, icon: Icon }) => {
         const selected = theme === value;
@@ -44,7 +40,7 @@ export default function ThemeSwitcher() {
             aria-pressed={selected}
             onClick={() => setTheme(value)}
             className={clsx(
-              "flex h-9 w-9 items-center justify-center rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 focus-visible:outline-none",
+              "flex h-7 w-7 items-center justify-center rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 focus-visible:outline-none",
               selected ? "bg-sky-500 text-white" : "hover:bg-white dark:hover:bg-black",
             )}
           >

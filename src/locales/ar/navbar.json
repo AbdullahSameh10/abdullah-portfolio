@@ -6,8 +6,10 @@
   "projects": "المشاريع",
   "certificates": "الشهادات",
   "contact": "تواصل",
-  "language": "اللغة",
   "theme": "المظهر",
   "openMenu": "فتح القائمة",
-  "closeMenu": "إغلاق القائمة"
+  "closeMenu": "إغلاق القائمة",
+  "language": {
+    "title": "اختر اللغة"
+  }
 }
