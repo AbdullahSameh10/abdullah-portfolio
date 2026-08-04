@@ -18,8 +18,7 @@
 - [x] Setup Theme Provider
 - [x] Setup Dark / Light / System mode
 - [x] Create initial Logo
-- [ ] Configure Router
-- [ ] Setup Layout system
+- [x] Setup Layout system
 
 ---
 
