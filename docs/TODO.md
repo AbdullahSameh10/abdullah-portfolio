@@ -240,7 +240,7 @@
 - [ ] Project Search
 - [ ] AI Chat Assistant
 - [ ] GitHub Activity Integration
-- [  ] LeetCode Statistics
+- [ ] LeetCode Statistics
 - [ ] GitHub Contribution Graph
 - [ ] Interactive Terminal
 - [ ] Command Palette
