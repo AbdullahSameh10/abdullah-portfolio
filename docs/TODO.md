@@ -76,8 +76,8 @@
 
 ## Layout
 
-- [ ] Container
-- [ ] Section
+- [x] Container
+- [x] Section
 - [ ] Grid
 - [ ] Divider
 
