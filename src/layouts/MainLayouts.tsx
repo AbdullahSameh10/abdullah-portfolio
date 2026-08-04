@@ -8,7 +8,7 @@ interface MainLayoutProps {
 
 export default function MainLayout({ children }: MainLayoutProps) {
   return (
-    <div className="min-h-screen bg-white text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-white">
+    <div className="min-h-screen bg-neutral-100 text-slate-900 transition-colors duration-300 dark:bg-slate-950 dark:text-white">
       {/* Header */}
       <Navbar />
 

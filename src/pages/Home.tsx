@@ -1,15 +1,19 @@
-import { Hero } from "@Components/sections";
+import { About, Hero } from "@Components/sections";
 
 
 export default function Home() {
   return (
-    <div className="-mt-[74px] flex flex-col">
+    <div className="relative -mt-[74px] flex flex-col">
       <Hero />
-      {/* <About /> */}
+      <About />
       {/* <Skills /> */}
+      {/* <SectionDivider /> */}
       {/* <Experience /> */}
+      {/* <SectionDivider /> */}
       {/* <Projects /> */}
+      {/* <SectionDivider /> */}
       {/* <Certificates /> */}
+      {/* <SectionDivider /> */}
       {/* <Contact /> */}
     </div>
   );

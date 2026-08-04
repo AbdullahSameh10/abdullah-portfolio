@@ -32,17 +32,17 @@
                         │
                         ▼
                ┌─────────────────┐
-               │  SectionHeading │ ← 🚀 WE ARE HERE
+               │ Section Heading │ ← ✅ DONE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │      About      │ ← ⏳ NEXT
+               │      About      │ ← 🚀 WE ARE HERE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │     Skills      │ 
+               │     Skills      │ ← ⏳ NEXT
                └────────┬────────┘
                         │
                         ▼

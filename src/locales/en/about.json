@@ -1,0 +1,43 @@
+{
+  "eyebrow": "About me",
+  "title": "Building interfaces with purpose",
+  "description": "I care about turning ideas into polished, accessible, and maintainable digital experiences.",
+  "intro": "I’m a frontend developer who enjoys combining thoughtful design with clean, scalable code.",
+  "paragraphs": {
+    "first": "My approach focuses on creating interfaces that are not only visually impressive, but also responsive, accessible, intuitive, and enjoyable to use.",
+    "second": "I believe great frontend development sits at the intersection of design, engineering, performance, and user experience."
+  },
+  "cta": "Explore my work",
+  "focus": {
+    "frontend": {
+      "title": "Frontend Development",
+      "description": "Building responsive interfaces with modern frontend technologies and reusable components."
+    },
+    "architecture": {
+      "title": "Clean Architecture",
+      "description": "Organizing applications into maintainable, scalable, and understandable structures."
+    },
+    "experience": {
+      "title": "User Experience",
+      "description": "Paying attention to interaction, accessibility, responsiveness, and the details that make interfaces feel polished."
+    }
+  },
+  "stats": {
+    "experience": {
+      "value": "8+",
+      "label": "Years Of Learning"
+    },
+    "projects": {
+      "value": "20+",
+      "label": "Projects"
+    },
+    "technologies": {
+      "value": "15+",
+      "label": "Technologies"
+    },
+    "spokenLanguages": {
+      "value": "3",
+      "label": "Spoken Languages"
+    }
+  }
+}

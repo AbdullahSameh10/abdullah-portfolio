@@ -15,7 +15,7 @@ html {
 
 body {
   min-height: 100vh;
-  @apply bg-white text-gray-900 dark:bg-gray-950 dark:text-white;
+  @apply bg-neutral-100 text-gray-900 dark:bg-gray-950 dark:text-white;
 }
 
 @media (prefers-reduced-motion: reduce) {

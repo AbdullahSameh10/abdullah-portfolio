@@ -96,3 +96,32 @@
     animation: none;
   }
 }
+
+@keyframes snow-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(
+      var(--snow-distance),
+      var(--snow-distance),
+      0
+    );
+  }
+}
+
+.snow-particle {
+  animation-name: snow-drift;
+  animation-duration: var(--snow-duration);
+  animation-delay: var(--snow-delay);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .snow-particle {
+    animation: none;
+  }
+}

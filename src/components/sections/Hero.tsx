@@ -1,7 +1,7 @@
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Container, Section } from "@Components/layout";
+import { Container, Section, SectionDivider } from "@Components/layout";
 import styles from "@/globals.module.css";
 
 export default function Hero() {
@@ -12,7 +12,7 @@ export default function Hero() {
     <Section
       id="home"
       aria-labelledby="hero-title"
-      className="relative flex min-h-screen items-center overflow-hidden"
+      className="relative flex min-h-screen items-center"
     >
       {/* Background decoration */}
       <div
@@ -29,9 +29,9 @@ export default function Hero() {
       <Container className="relative z-10">
         <div className="flex flex-col-reverse items-center gap-10 py-14 text-center sm:gap-12 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16 lg:py-0 lg:text-left">
           {/* Hero Content */}
-          <div className="max-w-3xl">
+          <div className="max-w-3xl flex flex-col">
             {/* Eyebrow */}
-            <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-sky-500/20 bg-sky-500/5 px-4 py-2 dark:border-sky-400/20 dark:bg-sky-400/5">
+            <div className="mb-6 inline-flex max-w-[229px] items-center gap-3 rounded-full border border-sky-500/20 bg-sky-500/5 px-4 py-2 dark:border-sky-400/20 dark:bg-sky-400/5 rtl:max-w-[162px]">
               <span aria-hidden="true" className="relative flex h-2.5 w-2.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75" />
 
@@ -46,14 +46,14 @@ export default function Hero() {
             {/* Heading */}
             <h1
               id="hero-title"
-              className="text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 dark:text-white sm:text-5xl md:text-6xl lg:text-7xl"
+              className="text-left text-4xl font-bold leading-[1.08] tracking-tight text-slate-900 dark:text-white sm:text-5xl md:text-6xl lg:text-7xl rtl:text-right"
             >
               {t("title.greeting")}{" "}
               <span className="text-sky-500">{t("title.name")}</span>
             </h1>
 
             {/* Description */}
-            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-600 dark:text-slate-300 sm:text-base sm:leading-8 lg:mx-0 lg:text-lg">
+            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-slate-600 dark:text-slate-300 sm:text-base sm:leading-8 lg:mx-0 lg:text-lg rtl:text-right">
               {t("description")}
             </p>
 
@@ -256,38 +256,7 @@ export default function Hero() {
           />
         </a>
       </Container>
+      <SectionDivider className="!absolute -bottom-10 left-0 right-0" />
     </Section>
   );
-}
-
-{
-  /* <div
-  aria-hidden="true"
-  className="relative flex h-72 w-full max-w-xs items-center justify-center sm:h-80 sm:max-w-sm lg:ml-auto lg:h-96 lg:max-w-md lg:justify-end"
->
-  <div className="relative flex items-center justify-center lg:mr-10">
-    Outer glow
-    <div className="absolute h-52 w-52 rounded-full bg-sky-500/10 blur-3xl dark:bg-sky-400/10 sm:h-64 sm:w-64 lg:h-72 lg:w-72" />
-
-    Outer ring
-    <div className="absolute h-64 w-64 rounded-full border border-sky-500/10 dark:border-sky-400/10 sm:h-72 sm:w-72 lg:h-80 lg:w-80" />
-
-    Inner ring
-    <div className="absolute h-52 w-52 rounded-full border border-sky-500/15 dark:border-sky-400/15 sm:h-60 sm:w-60 lg:h-64 lg:w-64" />
-
-    Main mark
-    <div className="relative flex h-36 w-36 items-center justify-center rounded-[2rem] border border-sky-500/20 bg-white/70 shadow-2xl shadow-sky-500/10 backdrop-blur-xl dark:border-sky-400/20 dark:bg-slate-900/70 sm:h-44 sm:w-44 sm:rounded-[2.25rem] lg:h-48 lg:w-48 lg:rounded-[2.5rem]">
-      <span className="font-sansation text-5xl font-bold tracking-tight text-sky-500 sm:text-6xl lg:text-7xl">
-        AS
-      </span>
-
-      Decorative dots
-      <span className="absolute -right-2 top-7 h-2.5 w-2.5 rounded-full bg-sky-500 shadow-lg shadow-sky-500/40 sm:-right-3 sm:top-9 sm:h-3 sm:w-3" />
-
-      <span className="absolute -bottom-2 left-7 h-2 w-2 rounded-full bg-blue-500 shadow-lg shadow-blue-500/40 sm:left-9 sm:h-2.5 sm:w-2.5" />
-
-      <span className="absolute -left-2 top-14 h-1.5 w-1.5 rounded-full bg-sky-300 dark:bg-sky-400 sm:top-16 sm:h-2 sm:w-2" />
-    </div>
-  </div>
-</div>; */
 }

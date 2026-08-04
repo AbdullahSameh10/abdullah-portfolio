@@ -1,0 +1,43 @@
+{
+  "eyebrow": "À propos de moi",
+  "title": "Je crée des interfaces avec intention",
+  "description": "Je transforme les idées en expériences numériques soignées, accessibles et faciles à maintenir.",
+  "intro": "Je suis développeur frontend et j'aime associer un design réfléchi à un code propre et évolutif.",
+  "paragraphs": {
+    "first": "Mon approche consiste à créer des interfaces qui ne sont pas seulement belles, mais aussi responsives, accessibles, intuitives et agréables à utiliser.",
+    "second": "Je pense qu'un excellent développement frontend se situe à l'intersection du design, de l'ingénierie, des performances et de l'expérience utilisateur."
+  },
+  "cta": "Découvrir mes projets",
+  "focus": {
+    "frontend": {
+      "title": "Développement Frontend",
+      "description": "Créer des interfaces responsives avec des technologies frontend modernes et des composants réutilisables."
+    },
+    "architecture": {
+      "title": "Architecture propre",
+      "description": "Structurer les applications de manière claire, évolutive et facile à maintenir."
+    },
+    "experience": {
+      "title": "Expérience utilisateur",
+      "description": "Accorder de l'importance aux interactions, à l'accessibilité, à la responsivité et aux détails qui rendent une interface soignée."
+    }
+  },
+  "stats": {
+    "experience": {
+      "value": "8+",
+      "label": "Années d'apprentissage"
+    },
+    "projects": {
+      "value": "20+",
+      "label": "Projets"
+    },
+    "technologies": {
+      "value": "15+",
+      "label": "Technologies"
+    },
+    "spokenLanguages": {
+      "value": "3",
+      "label": "Langues parlées"
+    }
+  }
+}
