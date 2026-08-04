@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Développeur Frontend",
+  "title": {
+    "greeting": "Salut, je suis",
+    "name": "Abdullah Sameh"
+  },
+  "description": "Je crée des expériences web modernes, réactives et de haute précision avec React et TypeScript.",
+  "actions": {
+    "projects": "Voir les projets",
+    "contact": "Discutons"
+  },
+  "scroll": "Faire défiler pour explorer"
+}

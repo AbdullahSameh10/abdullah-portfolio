@@ -6,14 +6,17 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import enCommon from "@Locales/en/common.json";
 import enNavbar from "@Locales/en/navbar.json";
 import enTheme from "@Locales/en/theme.json";
+import enHero from "@Locales/en/hero.json";
 
 import arCommon from "@Locales/ar/common.json";
 import arNavbar from "@Locales/ar/navbar.json";
 import arTheme from "@Locales/ar/theme.json";
+import arHero from "@Locales/ar/hero.json";
 
 import frCommon from "@Locales/fr/common.json";
 import frNavbar from "@Locales/fr/navbar.json";
 import frTheme from "@Locales/fr/theme.json";
+import frHero from "@Locales/fr/hero.json";
 
 i18n
   .use(LanguageDetector)
@@ -24,23 +27,26 @@ i18n
         common: enCommon,
         navbar: enNavbar,
         theme: enTheme,
+        hero: enHero,
       },
 
       ar: {
         common: arCommon,
         navbar: arNavbar,
         theme: arTheme,
+        hero: arHero,
       },
 
       fr: {
         common: frCommon,
         navbar: frNavbar,
         theme: frTheme,
+        hero: frHero,
       },
     },
 
     defaultNS: "common",
-    ns: ["common", "navbar", "theme"],
+    ns: ["common", "navbar", "theme", "hero"],
 
     fallbackLng: "en",
 

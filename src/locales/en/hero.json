@@ -1,0 +1,13 @@
+{
+  "eyebrow": "Frontend Developer",
+  "title": {
+    "greeting": "Hi, I'm",
+    "name": "Abdullah Sameh"
+  },
+  "description": "I build modern, responsive, and pixel-perfect web experiences with React and TypeScript.",
+  "actions": {
+    "projects": "View Projects",
+    "contact": "Let's Talk"
+  },
+  "scroll": "Scroll to explore"
+}

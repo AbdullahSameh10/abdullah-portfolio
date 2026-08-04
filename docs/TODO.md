@@ -134,12 +134,25 @@
 
 ## Hero
 
-- [ ] Hero Layout
-- [ ] Animated Background
-- [ ] Introduction
-- [ ] CTA Buttons
-- [ ] Social Icons
-- [ ] Scroll Indicator
+- [x] Hero Layout
+- [x] Animated Background
+- [x] Introduction
+- [x] CTA Buttons
+- [x] Social Icons
+- [x] Scroll Indicator
+
+### Possible Hero upgrades:
+
+- [ ] Mouse parallax
+- [ ] Interactive gradient following the cursor
+- [ ] Animated particles
+- [ ] Animated code snippets
+- [ ] Typing effect
+- [ ] Better floating background shapes
+- [ ] 3D lighting
+- [ ] Premium hover effects
+- [ ] Better AS logo animation
+- [ ] Scroll-triggered Hero exit animation
 
 ## About
 

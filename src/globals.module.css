@@ -54,3 +54,45 @@
 .animateThemeRotate {
   animation: theme-rotate 500ms ease-in-out;
 }
+
+/* =========================================================
+   HERO ORBIT ANIMATIONS
+   ========================================================= */
+
+@keyframes hero-orbit-clockwise {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes hero-orbit-counter-clockwise {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.hero-orbit-clockwise {
+  animation: hero-orbit-clockwise 24s linear infinite;
+  will-change: transform;
+}
+
+.hero-orbit-counter-clockwise {
+  animation: hero-orbit-counter-clockwise 30s linear infinite;
+  will-change: transform;
+}
+
+/* Respect the user's reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .hero-orbit-clockwise,
+  .hero-orbit-counter-clockwise {
+    animation: none;
+  }
+}
