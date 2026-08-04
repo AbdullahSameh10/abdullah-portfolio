@@ -56,7 +56,7 @@
 
 ## Effects
 
-- [ ] Shadows
+- [x] Shadows
 - [x] Border radius
 - [x] Blur system
 - [x] Glassmorphism styles
@@ -127,13 +127,6 @@
 - [ ] Footer
 - [ ] Social Links
 - [ ] Copyright
-
-## Routing
-
-- [ ] React Router
-- [ ] 404 Page
-- [ ] Scroll Restoration
-- [ ] Page Transitions
 
 ---
 
