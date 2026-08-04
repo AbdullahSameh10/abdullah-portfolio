@@ -16,11 +16,11 @@ export default function LanguageMenu({
     <div
       role="menu"
       aria-label="Language selector"
-      className="w-44 p-0 flex items-center justify-center py-2 overflow-hidden rounded-3xl border border-slate-200 bg-white/90 shadow-2xl backdrop-blur-xl dark:border-slate-700 dark:bg-slate-900/90"
+      className="w-48 p-0 flex items-center justify-center py-4 overflow-hidden rounded-3xl border border-slate-200 bg-white/90 shadow-2xl backdrop-blur-xl dark:border-slate-700 dark:bg-slate-900/90"
     >
       <div className="justify-self-center">
       {/* Header */}
-      <div className="px-4 pt-2 pb-3">
+      <div className="px-4 pb-5">
         <p className="text-[10px] font-bold tracking-[0.25em] text-slate-400 uppercase dark:text-slate-500">
           {t("language.title")}
         </p>

@@ -1,53 +1,93 @@
 import { Moon, Sun } from "lucide-react";
-import useTheme from "@Hooks/useTheme";
-import type { Theme } from "@Types/index";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import type { LucideIcon } from "lucide-react";
 import clsx from "clsx";
-
-const themes: {
-  value: Theme;
-  icon: LucideIcon;
-}[] = [
-  {
-    value: "light",
-    icon: Sun,
-  },
-  {
-    value: "dark",
-    icon: Moon,
-  },
-];
+import useTheme from "@Hooks/useTheme";
+import styles from "@/globals.module.css";
 
 export default function ThemeSwitcher() {
-    const { t } = useTranslation("theme");
-  const { theme, setTheme } = useTheme();
+  const { t } = useTranslation("theme");
+  const { theme, resolvedTheme, setTheme } = useTheme();
+
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [displayedTheme, setDisplayedTheme] = useState(resolvedTheme);
+
+  /*
+   * Keep the displayed icon synchronized with the actual
+   * resolved theme when the theme changes externally.
+   */
+  useEffect(() => {
+    if (!isAnimating) {
+      setDisplayedTheme(resolvedTheme);
+    }
+  }, [resolvedTheme, isAnimating]);
+
+  const toggleTheme = () => {
+    if (isAnimating) return;
+
+    const nextTheme = resolvedTheme === "light" ? "dark" : "light";
+
+    setIsAnimating(true);
+
+    /*
+     * Change the theme during the rotation rather than
+     * immediately replacing the icon.
+     */
+    window.setTimeout(() => {
+      setTheme(nextTheme);
+      setDisplayedTheme(nextTheme);
+    }, 180);
+
+    /*
+     * End the animation after one complete rotation.
+     */
+    window.setTimeout(() => {
+      setIsAnimating(false);
+    }, 500);
+  };
+
+  const isLight = displayedTheme === "light";
+  const Icon = isLight ? Sun : Moon;
 
   return (
-    <div
-      role="group"
-      aria-label={t("switcher")}
-      className="flex items-center rounded-full gap-1 border border-slate-200 bg-slate-100 p-1 dark:border-slate-700 dark:bg-slate-800/70"
+    <button
+      type="button"
+      aria-label={t(isLight ? "dark" : "light")}
+      aria-pressed={theme === "dark"}
+      onClick={toggleTheme}
+      className={clsx(
+        "group relative flex h-9 w-9 items-center justify-center",
+        "rounded-full border border-slate-200",
+        "bg-white/80 text-slate-600 shadow-sm",
+        "transition-all duration-300",
+        "hover:border-sky-500 hover:bg-sky-50 hover:text-sky-500",
+        "hover:shadow-md",
+        "focus-visible:outline-none",
+        "focus-visible:ring-2 focus-visible:ring-sky-500",
+        "focus-visible:ring-offset-2",
+        "active:scale-95",
+        "dark:border-slate-700",
+        "dark:bg-slate-900/80",
+        "dark:text-slate-300",
+        "dark:hover:border-sky-400",
+        "dark:hover:bg-sky-500/10",
+        "dark:hover:text-sky-400",
+      )}
     >
-      {themes.map(({ value, icon: Icon }) => {
-        const selected = theme === value;
-
-        return (
-          <button
-            key={value}
-            type="button"
-            aria-label={t(value)}
-            aria-pressed={selected}
-            onClick={() => setTheme(value)}
-            className={clsx(
-              "flex h-7 w-7 items-center justify-center rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 focus-visible:outline-none",
-              selected ? "bg-sky-500 text-white" : "hover:bg-white dark:hover:bg-black",
-            )}
-          >
-            <Icon size={18} strokeWidth={2.2} />
-          </button>
-        );
-      })}
-    </div>
+      <span
+        aria-hidden="true"
+        className={clsx(
+          "flex items-center justify-center",
+          isAnimating && styles.animateThemeRotate,
+        )}
+      >
+        <Icon
+          key={displayedTheme}
+          size={18}
+          strokeWidth={2.2}
+          className="transition-colors duration-200"
+        />
+      </span>
+    </button>
   );
 }

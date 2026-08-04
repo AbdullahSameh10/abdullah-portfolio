@@ -2,4 +2,4 @@ export { default as Logo } from "./Logo";
 export { default as LanguageSwitcher } from "./LanguageSwitcher/LanguageSwitcher";
 export { default as ThemeSwitcher } from "./ThemeSwitcher";
 export { default as MobileMenuButton } from "./MobileMenuButton";
-export { default as MobileMenu } from "./mobileMenu";
+export { default as MobileMenu } from "./MobileMenu";

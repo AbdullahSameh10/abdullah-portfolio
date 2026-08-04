@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { ArrowUpRight, ChevronDown, Laptop, Moon, Sun, X } from "lucide-react";
 import { useTranslation } from "react-i18next";
-
 import { navigationItems } from "@Data/navigation";
 import useTheme from "@Hooks/useTheme";
 import type { Theme } from "@Types/index";
 import { languages, type Language } from "@Data/languages";
+import styles from "@/globals.module.css";
 
 interface MobileMenuProps {
   open: boolean;
@@ -44,6 +44,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
   const [themeOpen, setThemeOpen] = useState(false);
 
   const menuRef = useRef<HTMLDivElement>(null);
+  const mainContentRef = useRef<HTMLDivElement>(null);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
 
   const currentLanguage =
@@ -159,12 +160,12 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation"
-        className={`absolute inset-x-3 bottom-3 top-3 flex flex-col overflow-hidden rounded-[2rem] border border-slate-200/70 bg-white/95 shadow-2xl backdrop-blur-2xl transition-all duration-500 ease-out dark:border-slate-700/70 dark:bg-slate-950/95 ${
+        className={`absolute inset-x-3 bottom-3 top-3 flex flex-col overflow-hidden rounded-[2rem] border border-slate-200 bg-white/95 shadow-2xl backdrop-blur-2xl transition-all duration-500 ease-out dark:border-slate-700/70 dark:bg-slate-950/95 ${
           open ? "translate-y-0 scale-100" : "-translate-y-8 scale-[0.97]"
         } `}
       >
         {/* Header */}
-        <div className="flex shrink-0 items-center justify-between border-b border-slate-200/70 px-5 py-4 dark:border-slate-800">
+        <div className="flex shrink-0 items-center justify-between border-b border-slate-200 px-5 py-4 dark:border-slate-800">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-500">
               Navigation
@@ -188,7 +189,10 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-1 flex-col overflow-y-auto px-5 py-6">
+        <div
+          className={`${styles.customScrollbar} flex flex-1 flex-col overflow-y-auto px-5 py-6`}
+          ref={mainContentRef}
+        >
           {/* Navigation Links */}
           <nav aria-label="Mobile navigation">
             <ul className="flex flex-col gap-1">
@@ -199,7 +203,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                     href={item.href}
                     tabIndex={open ? 0 : -1}
                     onClick={onClose}
-                    className="group flex items-center justify-between rounded-2xl px-4 py-3 text-lg font-semibold tracking-tight text-slate-800 transition-all duration-300 hover:bg-sky-50 hover:text-sky-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 active:scale-[0.98] dark:text-slate-100 dark:hover:bg-slate-900 dark:hover:text-sky-400"
+                    className="group flex items-center justify-between rounded-2xl px-5 py-3 text-lg font-semibold tracking-tight text-slate-800 transition-all duration-300 hover:bg-sky-50 hover:text-sky-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 active:scale-[0.98] dark:text-slate-100 dark:hover:bg-slate-900 dark:hover:text-sky-400"
                   >
                     <span>{t(item.key)}</span>
 
@@ -215,7 +219,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
           </nav>
 
           {/* Divider */}
-          <div className="my-6 min-h-px w-full bg-slate-200/70 dark:bg-slate-800" />
+          <div className="my-6 min-h-[0.5px] w-full bg-slate-200 dark:bg-slate-800" />
 
           {/* Settings */}
           <div className="flex flex-col gap-2">
@@ -226,8 +230,19 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                 aria-expanded={languageOpen}
                 aria-controls="mobile-language-options"
                 onClick={() => {
-                  setLanguageOpen((prev) => !prev);
+                  const willOpen = !languageOpen;
+
+                  setLanguageOpen(willOpen);
                   setThemeOpen(false);
+
+                  if (willOpen) {
+                    setTimeout(() => {
+                      mainContentRef.current?.scrollTo({
+                        top: mainContentRef.current.scrollHeight,
+                        behavior: "smooth",
+                      });
+                    }, 320);
+                  }
                 }}
                 className="group flex min-h-14 w-full items-center justify-between rounded-2xl px-4 text-left transition-all duration-300 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 dark:hover:bg-slate-900"
               >
@@ -244,20 +259,14 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                     </p>
 
                     <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
-                      {tTheme(
-                        currentLanguage.name.toLowerCase(),
-                      )[0].toUpperCase() +
-                        tTheme(currentLanguage.name.toLowerCase()).slice(1)}
+                      {currentLanguage.name}
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <span className="hidden text-sm font-medium text-slate-500 dark:text-slate-400 sm:block">
-                    {tTheme(
-                      currentLanguage.name.toLowerCase(),
-                    )[0].toUpperCase() +
-                      tTheme(currentLanguage.name.toLowerCase()).slice(1)}
+                    {currentLanguage.name}
                   </span>
 
                   <ChevronDown
@@ -321,8 +330,19 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                 aria-expanded={themeOpen}
                 aria-controls="mobile-theme-options"
                 onClick={() => {
-                  setThemeOpen((prev) => !prev);
+                  const willOpen = !themeOpen;
+
+                  setThemeOpen(willOpen);
                   setLanguageOpen(false);
+
+                  if (willOpen) {
+                    setTimeout(() => {
+                      mainContentRef.current?.scrollTo({
+                        top: mainContentRef.current.scrollHeight,
+                        behavior: "smooth",
+                      });
+                    }, 320);
+                  }
                 }}
                 className="group flex min-h-14 w-full items-center justify-between rounded-2xl px-4 text-left transition-all duration-300 hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 dark:hover:bg-slate-900"
               >
@@ -333,18 +353,18 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
 
                   <div>
                     <p className="text-sm font-semibold text-slate-800 dark:text-slate-100">
-                      Theme
+                      {tTheme("theme")}
                     </p>
 
                     <p className="mt-0.5 text-xs text-slate-500 dark:text-slate-400">
-                      {currentTheme.label}
+                      {tTheme(currentTheme.label.toLowerCase())}
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-2">
                   <span className="hidden text-sm font-medium text-slate-500 dark:text-slate-400 sm:block">
-                    {currentTheme.label}
+                    {tTheme(currentTheme.label.toLowerCase())}
                   </span>
 
                   <ChevronDown
@@ -389,7 +409,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
                         <span className="flex items-center gap-3">
                           <Icon size={17} strokeWidth={2.2} />
 
-                          {label}
+                          {(tTheme(label.toLowerCase()))}
                         </span>
 
                         {selected && (
@@ -408,7 +428,7 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
         </div>
 
         {/* Bottom Actions */}
-        <div className="shrink-0 border-t border-slate-200/70 px-5 py-5 dark:border-slate-800">
+        <div className="shrink-0 border-t border-slate-200 px-5 py-5 dark:border-slate-800">
           <div className="grid grid-cols-2 gap-3">
             {/* Contact */}
             <a

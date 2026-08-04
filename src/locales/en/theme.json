@@ -3,5 +3,6 @@
   "system": "System",
   "dark": "Dark",
   "switcher": "Theme switcher",
-  "language": "Language"
+  "language": "Language",
+  "theme": "Theme"
 }
