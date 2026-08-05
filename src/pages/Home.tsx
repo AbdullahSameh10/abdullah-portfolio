@@ -1,4 +1,4 @@
-import { About, Hero } from "@Components/sections";
+import { About, Hero, Skills } from "@Components/sections";
 
 
 export default function Home() {
@@ -6,7 +6,7 @@ export default function Home() {
     <div className="relative -mt-[74px] flex flex-col">
       <Hero />
       <About />
-      {/* <Skills /> */}
+      <Skills />
       {/* <SectionDivider /> */}
       {/* <Experience /> */}
       {/* <SectionDivider /> */}

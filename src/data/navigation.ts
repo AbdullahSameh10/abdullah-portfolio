@@ -20,12 +20,12 @@ export const navigationItems: NavigationItem[] = [
     href: "#about",
   },
   {
-    key: "projects",
-    href: "#projects",
+    key: "skills",
+    href: "#skills",
   },
   {
-    key: "certificates",
-    href: "#certificates",
+    key: "projects",
+    href: "#projects",
   },
   {
     key: "contact",

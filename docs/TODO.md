@@ -65,8 +65,8 @@
 
 - [ ] Duration tokens
 - [ ] Easing tokens
-- [ ] Hover animations
-- [ ] Entrance animations
+- [x] Hover animations
+- [x] Entrance animations
 - [x] Scroll animations
 
 ---
@@ -78,7 +78,7 @@
 - [x] Container
 - [x] Section
 - [ ] Grid
-- [ ] Divider
+- [x] Divider
 
 ## Buttons
 
@@ -156,16 +156,96 @@
 
 ## About
 
-- [ ] Biography
-- [ ] Timeline
-- [ ] Experience Overview
+- [x] Biography
+- [x] Timeline
+- [x] Experience Overview
 
 ## Skills
 
-- [ ] Frontend Skills
-- [ ] Programming Languages
-- [ ] Tools
-- [ ] Soft Skills
+- [x] Frontend Skills
+- [x] Programming Languages
+- [x] Tools
+- [x] Soft Skills
+
+### Possible Skills upgrades:
+
+- [ ] Add interactive skill details
+  - Show a short description, experience/context, or notable usage when a technology card is selected or hovered.
+  - Keep the default card layout clean and lightweight.
+
+- [ ] Add technology proficiency indicators
+  - Consider a subtle visual indicator for familiarity/experience level.
+  - Avoid misleading percentage-based "skill scores"; use meaningful categories such as `Primary`, `Advanced`, or `Familiar` if needed.
+
+- [ ] Add technology filtering
+  - Allow visitors to filter skills by category such as Frontend, Programming, Tools, and Soft Skills.
+  - Keep filtering optional and unobtrusive.
+
+- [ ] Add technology grouping improvements
+  - Review and refine skill categories as the technology stack grows.
+  - Prevent the section from becoming an unnecessarily long list.
+
+- [ ] Add technology/project relationships
+  - Allow visitors to see which projects use a particular technology.
+  - Example: selecting React could highlight or link to projects built with React.
+
+- [ ] Add skill-to-project navigation
+  - Add a "View related projects" interaction for technologies that are used in portfolio projects.
+
+- [ ] Add subtle interactive micro-interactions
+  - Improve hover/focus states for technology and soft-skill cards.
+  - Keep animations short, consistent, and accessibility-friendly.
+  - Respect `prefers-reduced-motion`.
+
+- [ ] Improve soft-skills presentation
+  - Consider adding a more visual representation of soft skills while preserving the clean 2×2 card layout.
+  - Avoid generic percentage/proficiency bars.
+
+- [ ] Add skill search
+  - Consider a lightweight search field if the number of technologies becomes large enough to justify it.
+  - Do not add search while the skill list remains small.
+
+- [ ] Add "Currently Learning" section
+  - Introduce a small section for technologies currently being explored.
+  - Clearly distinguish learning technologies from established skills.
+
+- [ ] Add technology resources
+  - Optionally link selected technologies to their official documentation or websites.
+  - Open external resources safely and accessibly.
+
+- [ ] Review and optimize skill icons
+  - Ensure all technology logos have consistent sizing, visual weight, and light/dark mode appearance.
+  - Replace or update icons when official brand assets become available.
+
+- [ ] Add progressive disclosure for advanced skill information
+  - Keep the initial view concise.
+  - Reveal additional information only when the visitor requests it.
+
+- [ ] Evaluate Skills section performance
+  - Ensure icons, animations, and interactive features do not negatively affect page performance.
+  - Lazy-load non-critical assets when appropriate.
+
+#### Skills Card Improvements
+
+- [ ] Add concise, meaningful descriptions to each technology card
+  - [ ] React — Component-based UI
+  - [ ] TypeScript — Type-safe development
+  - [ ] JavaScript — Web interactivity
+  - [ ] HTML — Semantic structure
+  - [ ] CSS — Responsive styling
+  - [ ] Tailwind CSS — Utility-first styling
+  - [ ] Vite — Frontend tooling
+  - [ ] C — Programming fundamentals
+  - [ ] C++ — OOP & algorithms
+  - [ ] Python — General-purpose programming
+  - [ ] Git — Version control
+  - [ ] GitHub — Code collaboration
+  - [ ] pnpm — Package management
+- [ ] Keep skill descriptions short and scannable
+- [ ] Add descriptions to all language files for English, Arabic, and French
+- [ ] Ensure skill descriptions remain responsive across screen sizes
+- [ ] Keep technology cards visually consistent when descriptions have different lengths
+- [ ] Translate all skill names and descriptions across English, Arabic, and French
 
 ## Experience
 

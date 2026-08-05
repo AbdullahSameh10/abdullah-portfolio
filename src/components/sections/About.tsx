@@ -2,7 +2,7 @@ import { ArrowUpRight, Code2, Layers3, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion, useReducedMotion } from "framer-motion";
 
-import { Container, Section } from "@Components/layout";
+import { Container, Section, SectionDivider } from "@Components/layout";
 import { SectionHeading } from "@Components/ui";
 
 export default function About() {
@@ -50,7 +50,7 @@ export default function About() {
     <Section
       id="about"
       aria-labelledby="about-title"
-      className="relative overflow-hidden"
+      className="relative"
     >
       {/* Background decoration */}
       <div
@@ -213,6 +213,7 @@ export default function About() {
           ))}
         </motion.div>
       </Container>
+      <SectionDivider className="!absolute bottom-2 lg:-bottom-5 left-0 right-0" />
     </Section>
   );
 }

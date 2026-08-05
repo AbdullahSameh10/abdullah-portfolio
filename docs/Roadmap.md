@@ -37,17 +37,17 @@
                         │
                         ▼
                ┌─────────────────┐
-               │      About      │ ← 🚀 WE ARE HERE
+               │      About      │ ← ✅ DONE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │     Skills      │ ← ⏳ NEXT
+               │     Skills      │ ← 🚀 WE ARE HERE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │   Experience    │
+               │   Experience    │ ← ⏳ NEXT
                └────────┬────────┘
                         │
                         ▼
@@ -77,7 +77,7 @@
                         │
            ┌────────────┼────────────┐
            ▼            ▼            ▼
-        SEO        Performance   Accessibility
+          SEO      Performance   Accessibility
            │            │            │
            └────────────┼────────────┘
                         ▼

@@ -1,0 +1,63 @@
+{
+  "eyebrow": "Skills & Technologies",
+  "title": "What I Work With",
+  "description": "A carefully selected set of technologies and tools I use to build modern, responsive, and polished digital experiences.",
+
+  "categories": {
+    "frontend": {
+      "title": "Frontend Development",
+      "description": "Technologies I use to build modern, scalable, and accessible interfaces."
+    },
+    "programming": {
+      "title": "Programming Languages",
+      "description": "Languages that form the foundation of my programming experience."
+    },
+    "tools": {
+      "title": "Tools & Workflow",
+      "description": "Tools I use to build, manage, and maintain projects efficiently."
+    },
+    "additional": {
+      "title": "Additional Technologies",
+      "description": "Additional technical experience beyond my primary frontend stack."
+    }
+  },
+
+  "items": {
+    "react": "React",
+    "typescript": "TypeScript",
+    "javascript": "JavaScript",
+    "html": "HTML",
+    "css": "CSS",
+    "tailwind": "Tailwind CSS",
+    "bootstrap": "Bootstrap",
+    "vite": "Vite",
+    "c": "C",
+    "cpp": "C++",
+    "python": "Python",
+    "git": "Git",
+    "github": "GitHub",
+    "pnpm": "pnpm"
+  },
+
+  "softSkills": {
+    "title": "Soft Skills",
+    "description": "The qualities that shape how I approach problems, communicate ideas, and work with others.",
+
+    "problemSolving": {
+      "title": "Problem Solving",
+      "description": "Breaking complex problems into practical, effective solutions."
+    },
+    "communication": {
+      "title": "Communication",
+      "description": "Explaining technical ideas clearly and effectively."
+    },
+    "teamwork": {
+      "title": "Teamwork",
+      "description": "Working collaboratively to achieve shared goals."
+    },
+    "continuousLearning": {
+      "title": "Continuous Learning",
+      "description": "Continuously improving my skills and exploring new technologies."
+    }
+  }
+}

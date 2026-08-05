@@ -1,0 +1,63 @@
+{
+  "eyebrow": "المهارات والتقنيات",
+  "title": "التقنيات التي أعمل بها",
+  "description": "مجموعة مختارة بعناية من التقنيات والأدوات التي أستخدمها لبناء تجارب رقمية حديثة، متجاوبة، ومصقولة.",
+
+  "categories": {
+    "frontend": {
+      "title": "تطوير الواجهات الأمامية",
+      "description": "التقنيات التي أستخدمها لبناء واجهات حديثة، قابلة للتوسع، وسهلة الاستخدام."
+    },
+    "programming": {
+      "title": "لغات البرمجة",
+      "description": "اللغات التي تشكل أساس خبرتي البرمجية."
+    },
+    "tools": {
+      "title": "الأدوات وبنية العمل",
+      "description": "الأدوات التي أستخدمها لبناء، إدارة، وصيانة المشاريع بكفاءة."
+    },
+    "additional": {
+      "title": "تقنيات إضافية",
+      "description": "خبرات تقنية إضافية بجانب تقنياتي الأساسية في تطوير الواجهات الأمامية."
+    }
+  },
+
+  "items": {
+    "react": "React",
+    "typescript": "TypeScript",
+    "javascript": "JavaScript",
+    "html": "HTML",
+    "css": "CSS",
+    "tailwind": "Tailwind CSS",
+    "bootstrap": "Bootstrap",
+    "vite": "Vite",
+    "c": "C",
+    "cpp": "C++",
+    "python": "Python",
+    "git": "Git",
+    "github": "GitHub",
+    "pnpm": "pnpm"
+  },
+
+  "softSkills": {
+    "title": "المهارات الشخصية",
+    "description": "الصفات التي تحدد كيف أتعامل مع المشكلات، وأعبر عن أفكاري، وأعمل مع الآخرين.",
+
+    "problemSolving": {
+      "title": "حل المشكلات",
+      "description": "تفكيك المشكلات المعقدة إلى حلول عملية وفعالة."
+    },
+    "communication": {
+      "title": "التواصل",
+      "description": "شرح الأفكار التقنية بوضوح وفاعلية."
+    },
+    "teamwork": {
+      "title": "العمل الجماعي",
+      "description": "العمل التشاركي لتحقيق الأهداف المشتركة."
+    },
+    "continuousLearning": {
+      "title": "التعلم المستمر",
+      "description": "تطوير مهاراتي باستمرار واستكشاف تقنيات جديدة."
+    }
+  }
+}

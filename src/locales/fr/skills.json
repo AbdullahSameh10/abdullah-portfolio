@@ -1,0 +1,63 @@
+{
+  "eyebrow": "Compétences & Technologies",
+  "title": "Ce avec quoi je travaille",
+  "description": "Une sélection rigoureuse de technologies et d'outils que j'utilise pour concevoir des expériences numériques modernes, réactives et soignées.",
+
+  "categories": {
+    "frontend": {
+      "title": "Développement Frontend",
+      "description": "Technologies que j'utilise pour construire des interfaces modernes, évolutives et accessibles."
+    },
+    "programming": {
+      "title": "Langages de programmation",
+      "description": "Langages qui forment la base de mon expérience en programmation."
+    },
+    "tools": {
+      "title": "Outils & Flux de travail",
+      "description": "Outils que j'utilise pour développer, gérer et maintenir mes projets efficacement."
+    },
+    "additional": {
+      "title": "Technologies complémentaires",
+      "description": "Expérience technique supplémentaire au-delà de ma stack frontend principale."
+    }
+  },
+
+  "items": {
+    "react": "React",
+    "typescript": "TypeScript",
+    "javascript": "JavaScript",
+    "html": "HTML",
+    "css": "CSS",
+    "tailwind": "Tailwind CSS",
+    "bootstrap": "Bootstrap",
+    "vite": "Vite",
+    "c": "C",
+    "cpp": "C++",
+    "python": "Python",
+    "git": "Git",
+    "github": "GitHub",
+    "pnpm": "pnpm"
+  },
+
+  "softSkills": {
+    "title": "Compétences relationnelles",
+    "description": "Les qualités qui façonnent ma façon d'aborder les problèmes, de communiquer mes idées et de collaborer avec les autres.",
+
+    "problemSolving": {
+      "title": "Résolution de problèmes",
+      "description": "Décomposer des problèmes complexes en solutions pratiques et efficaces."
+    },
+    "communication": {
+      "title": "Communication",
+      "description": "Expliquer des idées techniques de manière claire et efficace."
+    },
+    "teamwork": {
+      "title": "Travail d'équipe",
+      "description": "Travailler en collaboration pour atteindre des objectifs communs."
+    },
+    "continuousLearning": {
+      "title": "Apprentissage continu",
+      "description": "Améliorer continuellement mes compétences et explorer de nouvelles technologies."
+    }
+  }
+}
