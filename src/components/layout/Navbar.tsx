@@ -34,7 +34,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="sticky left-0 right-0 top-6 z-50 mx-auto w-full px-6">
+      <header className="sticky left-0 right-0 top-6 z-50 mx-auto w-full px-3 lg:px-6">
         <nav
           aria-label="Primary Navigation"
           className="mx-auto flex max-w-[1280px] justify-center rounded-full border border-slate-200/70 bg-white/80 shadow-lg shadow-black/5 backdrop-blur-xl dark:border-slate-700/70 dark:bg-slate-900/80 dark:shadow-black/20"

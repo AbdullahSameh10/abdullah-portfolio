@@ -256,7 +256,7 @@ export default function Hero() {
           />
         </a>
       </Container>
-      <SectionDivider className="!absolute -bottom-10 left-0 right-0" />
+      <SectionDivider className="!absolute bottom-2 lg:-bottom-10 left-0 right-0" />
     </Section>
   );
 }
