@@ -10,7 +10,7 @@ import {
   BookOpen,
 } from "lucide-react";
 
-import { Container, Section } from "@Components/layout";
+import { Container, Section, SectionDivider } from "@Components/layout";
 import { SectionHeading, SkillCard } from "@Components/ui";
 import { skills, type SkillCategory } from "@Data/skills";
 import { softSkills } from "@Data/softSkills";
@@ -38,7 +38,7 @@ export default function Skills() {
     <Section
       id="skills"
       aria-labelledby="skills-title"
-      className="relative overflow-hidden"
+      className="relative"
     >
       {/* =====================================================
           BACKGROUND DECORATION
@@ -240,6 +240,7 @@ export default function Skills() {
           </div>
         </motion.section>
       </Container>
+      <SectionDivider className="!absolute bottom-2 lg:-bottom-5 left-0 right-0" />
     </Section>
   );
 }

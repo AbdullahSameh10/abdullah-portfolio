@@ -1,0 +1,109 @@
+{
+  "eyebrow": "My Work",
+  "title": "Projects",
+  "projectCount": "Projects",
+  "description": "A selection of projects I've built across frontend development, Python, and C++, combining practical problem-solving with thoughtful engineering and user-focused design.",
+
+  "categories": {
+    "frontend": {
+      "title": "Frontend Development",
+      "description": "Modern web experiences built with React, TypeScript, JavaScript, and modern frontend tooling."
+    },
+    "python": {
+      "title": "Python",
+      "description": "Applications, tools, and experiments built with Python, from reusable libraries to practical desktop applications."
+    },
+    "cpp": {
+      "title": "C++",
+      "description": "Application-focused C++ projects exploring programming fundamentals, system design, and interactive interfaces."
+    }
+  },
+
+  "status": {
+    "completed": "Completed",
+    "in-progress": "In Progress"
+  },
+
+  "actions": {
+    "viewProject": "View Project",
+    "viewGithub": "View on GitHub",
+    "liveDemo": "Live Demo",
+    "comingSoon": "Coming Soon"
+  },
+
+  "technologies": {
+    "react": "React",
+    "typescript": "TypeScript",
+    "javascript": "JavaScript",
+    "python": "Python",
+    "cpp": "C++",
+    "tkinter": "Tkinter",
+    "pygame": "Pygame",
+    "vite": "Vite",
+    "tailwind": "Tailwind CSS",
+    "firebase": "Firebase",
+    "express": "Express.js",
+    "sqlite": "SQLite",
+    "html": "HTML",
+    "css": "CSS",
+    "bootstrap": "Bootstrap",
+    "api": "API"
+  },
+
+  "projects": {
+    "exclusive": {
+      "title": "Exclusive",
+      "description": "A complete e-commerce experience focused on modern UI, responsive design, product discovery, cart and wishlist functionality, checkout workflows, and a polished user experience."
+    },
+
+    "progBlog": {
+      "title": "Prog Blog",
+      "description": "A modern programming blog built to present technical content through a clean, responsive, and user-friendly interface."
+    },
+
+    "calorieTracker": {
+      "title": "Calorie Tracker",
+      "description": "A full-stack application for tracking daily calorie records through a practical interface and persistent data storage."
+    },
+
+    "kanbanBoard": {
+      "title": "Kanban Board",
+      "description": "A task management application inspired by the Kanban workflow, allowing users to organize and manage tasks through an interactive board."
+    },
+
+    "cubmart": {
+      "title": "CubMart",
+      "description": "A responsive e-commerce website built with core web technologies, focusing on clean layouts, product presentation, and interactive frontend behavior."
+    },
+
+    "tkable": {
+      "title": "Tkable",
+      "description": "A reusable Python library built on top of Tkinter to simplify the creation of desktop user interfaces and reusable UI components."
+    },
+
+    "expensesTracker": {
+      "title": "Expenses Tracker",
+      "description": "A desktop application for managing and tracking personal expenses through a practical Tkinter-based interface."
+    },
+
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "A Python application that retrieves weather information through an external API and presents the results through a simple user interface."
+    },
+
+    "dragonBallGame": {
+      "title": "Dragon Ball Game",
+      "description": "An action-oriented game project built with Python and Pygame, currently under active development."
+    },
+
+    "bankSystem": {
+      "title": "Bank System",
+      "description": "A C++ banking management system featuring account creation, authentication, profile management, deposits, withdrawals, account deletion, and a custom interactive interface."
+    },
+
+    "restaurantSystem": {
+      "title": "Restaurant Ordering System",
+      "description": "A C++ application for browsing meals and placing restaurant orders through an interactive user interface."
+    }
+  }
+}

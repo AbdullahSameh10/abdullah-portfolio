@@ -5,3 +5,5 @@ export { default as MobileMenuButton } from "./MobileMenuButton";
 export { default as MobileMenu } from "./MobileMenu";
 export { default as SectionHeading } from "./SectionHeading";
 export { default as SkillCard } from "./SkillCard";
+export { default as ProjectCard } from "./projects/ProjectCard";
+export { default as ProjectPreview } from "./projects/ProjectPreview";

@@ -42,22 +42,22 @@
                         │
                         ▼
                ┌─────────────────┐
-               │     Skills      │ ← 🚀 WE ARE HERE
+               │     Skills      │ ← ✅ DONE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │   Experience    │ ← ⏳ NEXT
+               │    Projects     │ ← ✅ DONE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │    Projects     │
+               │   Experience    │ ← 🚀 WE ARE HERE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │  Certificates   │
+               │  Certificates   │ ← ⏳ NEXT
                └────────┬────────┘
                         │
                         ▼

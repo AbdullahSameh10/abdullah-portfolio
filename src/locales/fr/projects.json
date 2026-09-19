@@ -1,0 +1,109 @@
+{
+  "eyebrow": "Mon travail",
+  "title": "Projets",
+  "projectCount": "Projets",
+  "description": "Une sélection de projets que j'ai développés en développement frontend, Python et C++, combinant résolution de problèmes pratiques, ingénierie réfléchie et conception centrée sur l'utilisateur.",
+
+  "categories": {
+    "frontend": {
+      "title": "Développement Frontend",
+      "description": "Des expériences web modernes développées avec React, TypeScript, JavaScript et des outils frontend modernes."
+    },
+    "python": {
+      "title": "Python",
+      "description": "Des applications, outils et expérimentations développés avec Python, allant des bibliothèques réutilisables aux applications desktop pratiques."
+    },
+    "cpp": {
+      "title": "C++",
+      "description": "Des projets applicatifs en C++ explorant les fondamentaux de la programmation, la conception de systèmes et les interfaces interactives."
+    }
+  },
+
+  "status": {
+    "completed": "Terminé",
+    "in-progress": "En cours"
+  },
+
+  "actions": {
+    "viewProject": "Voir le projet",
+    "viewGithub": "Voir sur GitHub",
+    "liveDemo": "Démo en ligne",
+    "comingSoon": "Bientôt disponible"
+  },
+
+  "technologies": {
+    "react": "React",
+    "typescript": "TypeScript",
+    "javascript": "JavaScript",
+    "python": "Python",
+    "cpp": "C++",
+    "tkinter": "Tkinter",
+    "pygame": "Pygame",
+    "vite": "Vite",
+    "tailwind": "Tailwind CSS",
+    "firebase": "Firebase",
+    "express": "Express.js",
+    "sqlite": "SQLite",
+    "html": "HTML",
+    "css": "CSS",
+    "bootstrap": "Bootstrap",
+    "api": "API"
+  },
+
+  "projects": {
+    "exclusive": {
+      "title": "Exclusive",
+      "description": "Une expérience e-commerce complète axée sur une interface moderne, un design responsive, la découverte de produits, le panier, la liste de souhaits, le processus de commande et une expérience utilisateur soignée."
+    },
+
+    "progBlog": {
+      "title": "Prog Blog",
+      "description": "Un blog de programmation moderne conçu pour présenter du contenu technique à travers une interface claire, responsive et facile à utiliser."
+    },
+
+    "calorieTracker": {
+      "title": "Calorie Tracker",
+      "description": "Une application complète permettant de suivre les données quotidiennes de calories grâce à une interface pratique et un stockage persistant des données."
+    },
+
+    "kanbanBoard": {
+      "title": "Kanban Board",
+      "description": "Une application de gestion des tâches inspirée de la méthode Kanban, permettant d'organiser et de gérer les tâches grâce à un tableau interactif."
+    },
+
+    "cubmart": {
+      "title": "CubMart",
+      "description": "Un site e-commerce responsive développé avec les technologies web fondamentales, mettant l'accent sur des mises en page propres, la présentation des produits et les interactions frontend."
+    },
+
+    "tkable": {
+      "title": "tkable",
+      "description": "Une bibliothèque Python réutilisable basée sur Tkinter, conçue pour simplifier la création d'interfaces desktop et de composants UI réutilisables."
+    },
+
+    "expensesTracker": {
+      "title": "Expenses Tracker",
+      "description": "Une application desktop permettant de gérer et suivre les dépenses personnelles grâce à une interface pratique basée sur Tkinter."
+    },
+
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "Une application Python qui récupère les informations météorologiques via une API externe et les présente à travers une interface utilisateur simple."
+    },
+
+    "dragonBallGame": {
+      "title": "Dragon Ball Game",
+      "description": "Un projet de jeu développé avec Python et Pygame, actuellement en cours de développement."
+    },
+
+    "bankSystem": {
+      "title": "Bank System",
+      "description": "Un système de gestion bancaire développé en C++ comprenant la création de comptes, l'authentification, la gestion du profil, les dépôts, les retraits, la suppression de comptes et une interface interactive personnalisée."
+    },
+
+    "restaurantSystem": {
+      "title": "Restaurant Ordering System",
+      "description": "Une application C++ permettant de consulter les repas et de passer des commandes dans un restaurant grâce à une interface utilisateur interactive."
+    }
+  }
+}

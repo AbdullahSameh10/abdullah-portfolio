@@ -1,0 +1,109 @@
+{
+  "eyebrow": "أعمالي",
+  "title": "المشاريع",
+  "projectCount": "مشاريع",
+  "description": "مجموعة من المشاريع التي طورتها في تطوير الواجهات الأمامية وPython و++C، تجمع بين حل المشكلات العملية والهندسة البرمجية المدروسة وتصميم تجارب تركز على المستخدم.",
+
+  "categories": {
+    "frontend": {
+      "title": "تطوير الواجهات الأمامية",
+      "description": "تجارب ويب حديثة مبنية باستخدام React وTypeScript وJavaScript وأدوات تطوير الواجهات الحديثة."
+    },
+    "python": {
+      "title": "Python",
+      "description": "تطبيقات وأدوات وتجارب مبنية باستخدام Python، بدايةً من المكتبات القابلة لإعادة الاستخدام وحتى تطبيقات سطح المكتب العملية."
+    },
+    "cpp": {
+      "title": "++C",
+      "description": "مشاريع تطبيقية باستخدام ++C تستكشف أساسيات البرمجة وتصميم الأنظمة وبناء الواجهات التفاعلية."
+    }
+  },
+
+  "status": {
+    "completed": "مكتمل",
+    "in-progress": "قيد التطوير"
+  },
+
+  "technologies": {
+    "react": "React",
+    "typescript": "TypeScript",
+    "javascript": "JavaScript",
+    "python": "Python",
+    "cpp": "++C",
+    "tkinter": "Tkinter",
+    "pygame": "Pygame",
+    "vite": "Vite",
+    "tailwind": "Tailwind CSS",
+    "firebase": "Firebase",
+    "express": "Express.js",
+    "sqlite": "SQLite",
+    "html": "HTML",
+    "css": "CSS",
+    "bootstrap": "Bootstrap",
+    "api": "API"
+  },
+
+  "actions": {
+    "viewProject": "عرض المشروع",
+    "viewGithub": "عرض على GitHub",
+    "liveDemo": "التجربة المباشرة",
+    "comingSoon": "قريبًا"
+  },
+
+  "projects": {
+    "exclusive": {
+      "title": "Exclusive",
+      "description": "تجربة تجارة إلكترونية متكاملة تركز على واجهة عصرية وتصميم متجاوب واستكشاف المنتجات وسلة المشتريات وقائمة الرغبات وعمليات الدفع وتجربة مستخدم متكاملة."
+    },
+
+    "progBlog": {
+      "title": "Prog Blog",
+      "description": "مدونة برمجية حديثة مصممة لعرض المحتوى التقني من خلال واجهة نظيفة ومتجاوبة وسهلة الاستخدام."
+    },
+
+    "calorieTracker": {
+      "title": "Calorie Tracker",
+      "description": "تطبيق متكامل لتتبع سجلات السعرات الحرارية اليومية من خلال واجهة عملية مع تخزين دائم للبيانات."
+    },
+
+    "kanbanBoard": {
+      "title": "Kanban Board",
+      "description": "تطبيق لإدارة المهام مستوحى من أسلوب Kanban، يتيح تنظيم المهام وإدارتها من خلال لوحة تفاعلية."
+    },
+
+    "cubmart": {
+      "title": "CubMart",
+      "description": "موقع تجارة إلكترونية متجاوب مبني باستخدام تقنيات الويب الأساسية، مع التركيز على التصميم المنظم وعرض المنتجات والتفاعل مع الواجهة."
+    },
+
+    "tkable": {
+      "title": "Tkable",
+      "description": "مكتبة Python قابلة لإعادة الاستخدام مبنية فوق Tkinter لتبسيط إنشاء واجهات تطبيقات سطح المكتب ومكونات الواجهة القابلة لإعادة الاستخدام."
+    },
+
+    "expensesTracker": {
+      "title": "Expenses Tracker",
+      "description": "تطبيق سطح مكتب لإدارة وتتبع المصروفات الشخصية من خلال واجهة عملية مبنية باستخدام Tkinter."
+    },
+
+    "weatherApp": {
+      "title": "Weather App",
+      "description": "تطبيق Python يسترجع بيانات الطقس من خلال API خارجي ويعرض النتائج عبر واجهة مستخدم بسيطة."
+    },
+
+    "dragonBallGame": {
+      "title": "Dragon Ball Game",
+      "description": "مشروع لعبة مبني باستخدام Python وPygame، وما زال قيد التطوير حاليًا."
+    },
+
+    "bankSystem": {
+      "title": "Bank System",
+      "description": "نظام لإدارة العمليات البنكية باستخدام ++C، يتضمن إنشاء الحسابات وتسجيل الدخول وإدارة الملف الشخصي والإيداع والسحب وحذف الحساب وواجهة تفاعلية مخصصة."
+    },
+
+    "restaurantSystem": {
+      "title": "Restaurant Ordering System",
+      "description": "تطبيق باستخدام ++C لاستعراض الوجبات وإجراء طلبات المطعم من خلال واجهة مستخدم تفاعلية."
+    }
+  }
+}
