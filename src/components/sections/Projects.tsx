@@ -2,7 +2,7 @@ import { Code2, Cpu, Terminal } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { motion, useReducedMotion } from "framer-motion";
 
-import { Container, Section } from "@Components/layout";
+import { Container, Section, SectionDivider } from "@Components/layout";
 import { ProjectCard, SectionHeading } from "@Components/ui";
 
 import projects from "@Data/projects";
@@ -24,7 +24,7 @@ export default function Projects() {
     <Section
       id="projects"
       aria-labelledby="projects-title"
-      className="relative overflow-hidden"
+      className="relative "
     >
       {/* =====================================================
           BACKGROUND DECORATION
@@ -134,6 +134,7 @@ export default function Projects() {
           })}
         </div>
       </Container>
+      <SectionDivider className="!absolute bottom-2 lg:-bottom-5 left-0 right-0" />
     </Section>
   );
 }

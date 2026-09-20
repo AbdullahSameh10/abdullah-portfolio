@@ -1,0 +1,67 @@
+{
+  "section": {
+    "eyebrow": "رحلتي",
+    "title": "الخبرة",
+    "description": "خط زمني للبرامج والتجارب التعليمية التي ساهمت في تشكيل رحلتي كمطور برمجيات."
+  },
+
+  "types": {
+    "self-directed": "التعلّم الذاتي",
+    "program": "برنامج",
+    "learning": "تعلّم"
+  },
+
+  "status": {
+    "present": "حتى الآن"
+  },
+
+  "futureMakersKids": {
+    "title": "Future Makers Kids",
+    "description": "بناء أساس قوي في البرمجة والتكنولوجيا من خلال التعلم العملي، مع دراسة أساسيات البرمجة ولغات C وC++ وPython والإلكترونيات وArduino."
+  },
+
+  "deci": {
+    "title": "مبادرة أشبال مصر الرقمية",
+    "description": "تطوير مهارات عملية في تطوير تطبيقات الهاتف المحمول والإلكترونيات وتقنيات الويب وتصميم واجهات المستخدم من خلال المشاريع والتعلم التطبيقي."
+  },
+
+  "yat": {
+    "title": "مركز YAT للتدريب",
+    "description": "تطوير مهارات Python من خلال مشاريع عملية باستخدام Tkinter وTurtle ومفاهيم تطوير الويب والتعامل مع الملفات."
+  },
+
+  "almdrasa": {
+    "title": "منصة المدرسة",
+    "description": "تطوير أساس قوي في هندسة البرمجيات من خلال Python وJava وهياكل البيانات وتطوير الويب وReact وTypeScript."
+  },
+
+  "selfDirectedLearning": {
+    "title": "التعلّم والتطوير الذاتي",
+    "description": "تطوير المعرفة البرمجية باستمرار من خلال البحث المستقل، والوثائق والمصادر التعليمية، والدورات، والتجربة، والمشاريع الشخصية، مع التركيز على تطبيق ما أتعلمه وتحسين مهاراتي من خلال الممارسة."
+  },
+
+  "technologies": {
+    "programming": "البرمجة",
+    "c": "C",
+    "cpp": "C++",
+    "python": "Python",
+    "electronics": "الإلكترونيات",
+    "arduino": "Arduino",
+    "mobileDevelopment": "تطوير تطبيقات الهاتف",
+    "html": "HTML",
+    "css": "CSS",
+    "figma": "Figma",
+    "wireframing": "التخطيط الهيكلي",
+    "tkinter": "Tkinter",
+    "turtle": "Turtle",
+    "webDevelopment": "تطوير الويب",
+    "fileHandling": "التعامل مع الملفات",
+    "java": "Java",
+    "dataStructures": "هياكل البيانات",
+    "javascript": "JavaScript",
+    "react": "React",
+    "typescript": "TypeScript",
+    "problemSolving": "حل المشكلات",
+    "personalProjects": "المشاريع الشخصية"
+  }
+}

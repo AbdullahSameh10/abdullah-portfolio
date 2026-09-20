@@ -10,6 +10,7 @@ import enHero from "@Locales/en/hero.json";
 import enAbout from "@Locales/en/about.json";
 import enSkills from "@Locales/en/skills.json";
 import enProjects from "@Locales/en/projects.json";
+import enExperience from "@Locales/en/experience.json";
 
 import arCommon from "@Locales/ar/common.json";
 import arNavbar from "@Locales/ar/navbar.json";
@@ -18,6 +19,7 @@ import arHero from "@Locales/ar/hero.json";
 import arAbout from "@Locales/ar/about.json";
 import arSkills from "@Locales/ar/skills.json";
 import arProjects from "@Locales/ar/projects.json";
+import arExperience from "@Locales/ar/experience.json";
 
 import frCommon from "@Locales/fr/common.json";
 import frNavbar from "@Locales/fr/navbar.json";
@@ -26,6 +28,7 @@ import frHero from "@Locales/fr/hero.json";
 import frAbout from "@Locales/fr/about.json";
 import frSkills from "@Locales/fr/skills.json";
 import frProjects from "@Locales/fr/projects.json";
+import frExperience from "@Locales/fr/experience.json";
 
 i18n
   .use(LanguageDetector)
@@ -40,6 +43,7 @@ i18n
         about: enAbout,
         skills: enSkills,
         projects: enProjects,
+        experience: enExperience,
       },
 
       ar: {
@@ -50,6 +54,7 @@ i18n
         about: arAbout,
         skills: arSkills,
         projects: arProjects,
+        experience: arExperience,
       },
 
       fr: {
@@ -60,11 +65,12 @@ i18n
         about: frAbout,
         skills: frSkills,
         projects: frProjects,
+        experience: frExperience,
       },
     },
 
     defaultNS: "common",
-    ns: ["common", "navbar", "theme", "hero", "about", "skills", "projects"],
+    ns: ["common", "navbar", "theme", "hero", "about", "skills", "projects", "experience"],
 
     fallbackLng: "en",
 

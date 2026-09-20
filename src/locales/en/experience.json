@@ -1,0 +1,67 @@
+{
+  "section": {
+    "eyebrow": "My Journey",
+    "title": "Experience",
+    "description": "A timeline of the programs and learning experiences that shaped my journey as a developer."
+  },
+
+  "types": {
+    "program": "Program",
+    "learning": "Learning",
+    "self-directed": "Self-Directed"
+  },
+
+  "status": {
+    "present": "Present"
+  },
+
+  "futureMakersKids": {
+    "title": "Future Makers Kids",
+    "description": "Built a strong foundation in programming and technology through practical learning, covering programming fundamentals, C, C++, Python, electronics, and Arduino."
+  },
+
+  "deci": {
+    "title": "Digital Egypt Cubs Initiative",
+    "description": "Developing practical skills across mobile application development, electronics, web technologies, and UI design through hands-on projects and structured learning."
+  },
+
+  "yat": {
+    "title": "YAT Learning Center",
+    "description": "Expanded Python development skills through practical projects using Tkinter, Turtle, web development concepts, and file handling."
+  },
+
+  "almdrasa": {
+    "title": "Almdrasa",
+    "description": "Advanced my software development foundation through Python and Java, data structures, web development, React, and TypeScript."
+  },
+
+  "selfDirectedLearning": {
+    "title": "Self-Directed Learning & Development",
+    "description": "Continuously building programming knowledge through independent research, documentation, courses, experimentation, and personal projects, with a focus on applying what I learn and improving through practice."
+  },
+
+  "technologies": {
+    "programming": "Programming",
+    "c": "C",
+    "cpp": "C++",
+    "python": "Python",
+    "electronics": "Electronics",
+    "arduino": "Arduino",
+    "mobileDevelopment": "Mobile Development",
+    "html": "HTML",
+    "css": "CSS",
+    "figma": "Figma",
+    "wireframing": "Wireframing",
+    "tkinter": "Tkinter",
+    "turtle": "Turtle",
+    "webDevelopment": "Web Development",
+    "fileHandling": "File Handling",
+    "java": "Java",
+    "dataStructures": "Data Structures",
+    "javascript": "JavaScript",
+    "react": "React",
+    "typescript": "TypeScript",
+    "problemSolving": "Problem Solving",
+    "personalProjects": "Personal Projects"
+  }
+}

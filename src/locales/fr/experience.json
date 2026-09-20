@@ -1,0 +1,66 @@
+{
+  "section": {
+    "eyebrow": "Mon parcours",
+    "title": "Expérience",
+    "description": "Une chronologie des programmes et expériences d'apprentissage qui ont contribué à construire mon parcours de développeur."
+  },
+
+  "types": {
+    "self-directed": "Autodidacte",
+    "program": "Programme",
+    "learning": "Formation"
+  },
+
+  "status": {
+    "present": "Aujourd'hui"
+  },
+
+  "futureMakersKids": {
+    "title": "Future Makers Kids",
+    "description": "Construction d'une base solide en programmation et en technologie grâce à un apprentissage pratique couvrant les fondamentaux, C, C++, Python, l'électronique et Arduino."
+  },
+
+  "deci": {
+    "title": "Digital Egypt Cubs Initiative",
+    "description": "Développement de compétences pratiques en développement mobile, électronique, technologies web et conception d'interfaces grâce à des projets et un apprentissage pratique."
+  },
+
+  "yat": {
+    "title": "YAT Learning Center",
+    "description": "Développement des compétences en Python à travers des projets pratiques utilisant Tkinter, Turtle, des concepts de développement web et la gestion des fichiers."
+  },
+
+  "almdrasa": {
+    "title": "Almdrasa",
+    "description": "Approfondissement des bases du développement logiciel avec Python et Java, les structures de données, le développement web, React et TypeScript."
+  },
+  "selfDirectedLearning": {
+    "title": "Apprentissage et développement autodidactes",
+    "description": "Développement continu de mes connaissances en programmation grâce à la recherche indépendante, la documentation, les formations, l'expérimentation et les projets personnels, avec un accent sur la mise en pratique et l'amélioration continue."
+  },
+
+  "technologies": {
+    "programming": "Programmation",
+    "c": "C",
+    "cpp": "C++",
+    "python": "Python",
+    "electronics": "Électronique",
+    "arduino": "Arduino",
+    "mobileDevelopment": "Développement mobile",
+    "html": "HTML",
+    "css": "CSS",
+    "figma": "Figma",
+    "wireframing": "Wireframing",
+    "tkinter": "Tkinter",
+    "turtle": "Turtle",
+    "webDevelopment": "Développement web",
+    "fileHandling": "Gestion des fichiers",
+    "java": "Java",
+    "dataStructures": "Structures de données",
+    "javascript": "JavaScript",
+    "react": "React",
+    "typescript": "TypeScript",
+    "problemSolving": "Résolution de problèmes",
+    "personalProjects": "Projets personnels"
+  }
+}

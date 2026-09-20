@@ -52,17 +52,17 @@
                         │
                         ▼
                ┌─────────────────┐
-               │   Experience    │ ← 🚀 WE ARE HERE
+               │   Experience    │ ← ✅ DONE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │  Certificates   │ ← ⏳ NEXT
+               │  Certificates   │ ← 🚀 WE ARE HERE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │     Contact     │
+               │     Contact     │ ← ⏳ NEXT
                └────────┬────────┘
                         │
                         ▼
