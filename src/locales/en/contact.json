@@ -1,0 +1,35 @@
+{
+  "section": {
+    "eyebrow": "Get in touch",
+    "title": "Let's build something together",
+    "description": "Have a project, idea, or opportunity in mind? I'd love to hear about it."
+  },
+  "intro": {
+    "title": "Let's talk",
+    "description": "Whether you're looking to build a website, improve an existing interface, or discuss a development idea, feel free to reach out."
+  },
+  "email": {
+    "label": "Email me"
+  },
+  "github": {
+    "label": "GitHub"
+  },
+  "form": {
+    "name": {
+      "label": "Name",
+      "placeholder": "Your name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "you@example.com"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Tell me about your project..."
+    },
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Your message has been sent successfully!",
+    "error": "Something went wrong. Please try again."
+  }
+}

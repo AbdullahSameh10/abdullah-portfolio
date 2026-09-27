@@ -1,0 +1,35 @@
+{
+  "section": {
+    "eyebrow": "Me contacter",
+    "title": "Construisons quelque chose ensemble",
+    "description": "Vous avez un projet, une idée ou une opportunité ? J'aimerais en discuter avec vous."
+  },
+  "intro": {
+    "title": "Parlons-en",
+    "description": "Que vous souhaitiez créer un site web, améliorer une interface existante ou discuter d'une idée de développement, n'hésitez pas à me contacter."
+  },
+  "email": {
+    "label": "M'envoyer un e-mail"
+  },
+  "github": {
+    "label": "GitHub"
+  },
+  "form": {
+    "name": {
+      "label": "Nom",
+      "placeholder": "Votre nom"
+    },
+    "email": {
+      "label": "E-mail",
+      "placeholder": "you@example.com"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Parlez-moi de votre projet..."
+    },
+    "submit": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Votre message a été envoyé avec succès !",
+    "error": "Une erreur est survenue. Veuillez réessayer."
+  }
+}
