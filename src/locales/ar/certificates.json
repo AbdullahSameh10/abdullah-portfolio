@@ -1,0 +1,85 @@
+{
+  "section": {
+    "eyebrow": "الشهادات",
+    "title": "الشهادات",
+    "description": "مجموعة من الشهادات والمحطات التعليمية التي تعكس تطوري المستمر في البرمجة وتطوير الويب."
+  },
+
+  "previewUnavailable": "معاينة الشهادة غير متاحة حاليًا.",
+
+  "status": "المحطات التعليمية",
+  "certificateCount": "شهادة",
+  "previewPlaceholder": "معاينة الشهادة",
+
+  "issued": "تاريخ الإصدار",
+  "certificateId": "رقم الشهادة",
+  "viewCertificate": "عرض الشهادة",
+
+  "previous": "الشهادة السابقة",
+  "next": "الشهادة التالية",
+  "certificateNavigation": "التنقل بين الشهادات",
+  "goToCertificate": "الانتقال إلى الشهادة رقم {{number}}",
+
+  "providers": {
+    "almdrasa": "المدرسة",
+    "mcit": "وزارة الاتصالات وتكنولوجيا المعلومات",
+    "digitopia": "DIGITOPIA",
+    "icpc": "ICPC",
+    "yat": "مركز YAT للتدريب"
+  },
+
+  "reactBasicsToAdvanced": {
+    "title": "React من الأساسيات إلى المستوى المتقدم",
+    "description": "إتمام مسار تعلم React الذي يغطي أساسيات React والمفاهيم المتقدمة في تطوير التطبيقات."
+  },
+
+  "javascriptBasicsToAdvanced": {
+    "title": "JavaScript من الأساسيات إلى المستوى المتقدم",
+    "description": "إتمام مسار JavaScript الذي يغطي أساسيات اللغة والمفاهيم المتقدمة."
+  },
+
+  "responsiveWebsitesHtmlCss": {
+    "title": "مواقع الويب المتجاوبة باستخدام HTML و CSS",
+    "description": "إتمام مسار يركز على بناء مواقع ويب منظمة ومتجاوبة باستخدام HTML و CSS."
+  },
+
+  "programmingBasics": {
+    "title": "أساسيات البرمجة",
+    "description": "إتمام مسار أساسيات البرمجة الذي يغطي المفاهيم الأساسية ومبادئ حل المشكلات."
+  },
+
+  "deciLevel2": {
+    "title": "DECI المستوى الثاني",
+    "description": "إتمام المستوى الثاني من برنامج أشبال مصر الرقمية."
+  },
+
+  "digitopia": {
+    "title": "DIGITOPIA",
+    "description": "شهادة حصلت عليها من خلال المشاركة في برنامج DIGITOPIA."
+  },
+
+  "ecpcTeensKickoff": {
+    "title": "ECPC Teens: ICPC KICKOFF",
+    "description": "المشاركة في فعالية ECPC Teens ICPC KICKOFF."
+  },
+
+  "pythonProgrammingFundamentals": {
+    "title": "إتقان أساسيات برمجة Python",
+    "description": "إتمام تدريب أساسيات برمجة Python في مركز YAT للتدريب."
+  },
+
+  "deciLevel1": {
+    "title": "DECI المستوى الأول",
+    "description": "إتمام المستوى الأول من برنامج أشبال مصر الرقمية."
+  },
+
+  "deciLevel1SummerCamp": {
+    "title": "المعسكر الصيفي لـ DECI المستوى الأول",
+    "description": "إتمام برنامج المعسكر الصيفي للمستوى الأول من DECI."
+  },
+
+  "ecpcTeens": {
+    "title": "ECPC Teens",
+    "description": "المشاركة في فعالية ECPC Teens للبرمجة."
+  }
+}

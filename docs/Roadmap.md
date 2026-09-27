@@ -57,17 +57,17 @@
                         │
                         ▼
                ┌─────────────────┐
-               │  Certificates   │ ← 🚀 WE ARE HERE
+               │  Certificates   │ ← ✅ DONE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │     Contact     │ ← ⏳ NEXT
+               │     Contact     │ ← 🚀 WE ARE HERE
                └────────┬────────┘
                         │
                         ▼
                ┌─────────────────┐
-               │     Footer      │
+               │     Footer      │← ⏳ NEXT
                └────────┬────────┘
                         │
                         ▼

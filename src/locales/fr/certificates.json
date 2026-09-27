@@ -1,0 +1,85 @@
+{
+  "section": {
+    "eyebrow": "Certifications",
+    "title": "Certificats",
+    "description": "Une sélection de certificats et d'étapes d'apprentissage qui reflètent mon développement continu en programmation et en développement web."
+  },
+
+  "previewUnavailable": "L’aperçu du certificat est actuellement indisponible.",
+
+  "status": "Étapes d'apprentissage",
+  "certificateCount": "certificats",
+  "previewPlaceholder": "Aperçu du certificat",
+
+  "issued": "Délivré le",
+  "certificateId": "Identifiant du certificat",
+  "viewCertificate": "Voir le certificat",
+
+  "previous": "Certificat précédent",
+  "next": "Certificat suivant",
+  "certificateNavigation": "Navigation entre les certificats",
+  "goToCertificate": "Aller au certificat {{number}}",
+
+  "providers": {
+    "almdrasa": "Almdrasa",
+    "mcit": "Ministère des Communications et des Technologies de l'information",
+    "digitopia": "DIGITOPIA",
+    "icpc": "ICPC",
+    "yat": "YAT Learning Center"
+  },
+
+  "reactBasicsToAdvanced": {
+    "title": "React : des bases au niveau avancé",
+    "description": "Achèvement du parcours React couvrant les fondamentaux et les concepts avancés du développement avec React."
+  },
+
+  "javascriptBasicsToAdvanced": {
+    "title": "JavaScript : des bases au niveau avancé",
+    "description": "Achèvement du parcours JavaScript couvrant les fondamentaux du langage et les concepts avancés."
+  },
+
+  "responsiveWebsitesHtmlCss": {
+    "title": "Sites web responsives avec HTML et CSS",
+    "description": "Achèvement du parcours consacré à la création de sites web structurés et responsives avec HTML et CSS."
+  },
+
+  "programmingBasics": {
+    "title": "Bases de la programmation",
+    "description": "Achèvement du parcours de bases de la programmation couvrant les concepts fondamentaux et les bases de la résolution de problèmes."
+  },
+
+  "deciLevel2": {
+    "title": "DECI Niveau 2",
+    "description": "Achèvement du niveau 2 du programme Digital Egypt Cubs Initiative."
+  },
+
+  "digitopia": {
+    "title": "DIGITOPIA",
+    "description": "Certificat obtenu dans le cadre de la participation au programme DIGITOPIA."
+  },
+
+  "ecpcTeensKickoff": {
+    "title": "ECPC Teens : ICPC KICKOFF",
+    "description": "Participation à l'événement ECPC Teens ICPC KICKOFF."
+  },
+
+  "pythonProgrammingFundamentals": {
+    "title": "Maîtriser les fondamentaux de la programmation Python",
+    "description": "Achèvement d'une formation sur les fondamentaux de la programmation Python au YAT Learning Center."
+  },
+
+  "deciLevel1": {
+    "title": "DECI Niveau 1",
+    "description": "Achèvement du niveau 1 du programme Digital Egypt Cubs Initiative."
+  },
+
+  "deciLevel1SummerCamp": {
+    "title": "Camp d'été DECI Niveau 1",
+    "description": "Achèvement du programme du camp d'été DECI Niveau 1."
+  },
+
+  "ecpcTeens": {
+    "title": "ECPC Teens",
+    "description": "Participation à l'événement de programmation ECPC Teens."
+  }
+}

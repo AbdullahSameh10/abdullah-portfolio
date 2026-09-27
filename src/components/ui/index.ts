@@ -7,3 +7,4 @@ export { default as SectionHeading } from "./SectionHeading";
 export { default as SkillCard } from "./SkillCard";
 export { default as ProjectCard } from "./projects/ProjectCard";
 export { default as ProjectPreview } from "./projects/ProjectPreview";
+export { default as CertificateCarousel } from "./CertificateCarousel";
