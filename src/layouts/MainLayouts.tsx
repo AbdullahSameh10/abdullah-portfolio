@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-import { Navbar } from "@Components/layout";
+import { Footer, Navbar } from "@Components/layout";
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -14,6 +14,9 @@ export default function MainLayout({ children }: MainLayoutProps) {
 
       {/* Main Content */}
       <main className="min-h-screen">{children}</main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

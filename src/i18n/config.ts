@@ -13,6 +13,7 @@ import enProjects from "@Locales/en/projects.json";
 import enExperience from "@Locales/en/experience.json";
 import enCertificates from "@Locales/en/certificates.json";
 import enContact from "@Locales/en/contact.json";
+import enFooter from "@Locales/en/footer.json";
 
 import arCommon from "@Locales/ar/common.json";
 import arNavbar from "@Locales/ar/navbar.json";
@@ -24,6 +25,7 @@ import arProjects from "@Locales/ar/projects.json";
 import arExperience from "@Locales/ar/experience.json";
 import arCertificates from "@Locales/ar/certificates.json";
 import arContact from "@Locales/ar/contact.json";
+import arFooter from "@Locales/ar/footer.json";
 
 import frCommon from "@Locales/fr/common.json";
 import frNavbar from "@Locales/fr/navbar.json";
@@ -35,6 +37,7 @@ import frProjects from "@Locales/fr/projects.json";
 import frExperience from "@Locales/fr/experience.json";
 import frCertificates from "@Locales/fr/certificates.json";
 import frContact from "@Locales/fr/contact.json";
+import frFooter from "@Locales/fr/footer.json";
 
 i18n
   .use(LanguageDetector)
@@ -52,6 +55,7 @@ i18n
         experience: enExperience,
         certificates: enCertificates,
         contact: enContact,
+        footer: enFooter,
       },
 
       ar: {
@@ -65,6 +69,7 @@ i18n
         experience: arExperience,
         certificates: arCertificates,
         contact: arContact,
+        footer: arFooter,
       },
 
       fr: {
@@ -78,6 +83,7 @@ i18n
         experience: frExperience,
         certificates: frCertificates,
         contact: frContact,
+        footer: frFooter,
       },
     },
 
@@ -93,6 +99,7 @@ i18n
       "experience",
       "certificates",
       "contact",
+      "footer",
     ],
 
     fallbackLng: "en",

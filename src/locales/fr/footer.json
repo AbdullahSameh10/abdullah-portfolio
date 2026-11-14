@@ -1,0 +1,17 @@
+{
+  "ariaLabel": "Pied de page du site",
+  "brand": {
+    "homeLabel": "Abdullah Sameh - Retour à l'accueil"
+  },
+  "description": "Développeur Frontend junior passionné par la création d'expériences web modernes, accessibles et conviviales.",
+  "social": {
+    "github": "Visiter mon profil GitHub",
+    "email": "M'envoyer un e-mail"
+  },
+  "navigation": {
+    "title": "Navigation rapide",
+    "ariaLabel": "Navigation du pied de page"
+  },
+  "copyright": "© {{year}} Abdullah Sameh. Tous droits réservés.",
+  "backToTop": "Retour en haut"
+}

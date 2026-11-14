@@ -1,0 +1,17 @@
+{
+  "ariaLabel": "Website footer",
+  "brand": {
+    "homeLabel": "Abdullah Sameh - Back to home"
+  },
+  "description": "Junior Frontend Web Developer passionate about building modern, accessible, and user-friendly web experiences.",
+  "social": {
+    "github": "Visit my GitHub profile",
+    "email": "Send me an email"
+  },
+  "navigation": {
+    "title": "Quick Navigation",
+    "ariaLabel": "Footer navigation"
+  },
+  "copyright": "© {{year}} Abdullah Sameh. All rights reserved.",
+  "backToTop": "Back to top"
+}
