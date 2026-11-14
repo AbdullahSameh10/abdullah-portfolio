@@ -3,10 +3,8 @@ import react from "@vitejs/plugin-react";
 import path from "node:path";
 
 export default defineConfig({
-  plugins: [
-    react()
-  ],
-
+  plugins: [react()],
+  base: "/abdullah-portfolio/",
   resolve: {
     alias: {
       "@Assets": path.resolve(__dirname, "./src/assets"),
@@ -22,7 +20,7 @@ export default defineConfig({
       "@Styles": path.resolve(__dirname, "./src/styles"),
       "@Locales": path.resolve(__dirname, "./src/locales"),
       "@I18n": path.resolve(__dirname, "./src/i18n"),
-      
+
       "@": path.resolve(__dirname, "./src"),
     },
   },
