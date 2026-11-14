@@ -4,7 +4,6 @@ import path from "node:path";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/abdullah-portfolio/",
   resolve: {
     alias: {
       "@Assets": path.resolve(__dirname, "./src/assets"),
