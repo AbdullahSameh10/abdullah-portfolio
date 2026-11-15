@@ -29,7 +29,7 @@ export default function Hero() {
       <Container className="relative z-10">
         <div className="flex flex-col-reverse items-center gap-10 py-14 text-center sm:gap-12 lg:grid lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:gap-16 lg:py-0 lg:text-left">
           {/* Hero Content */}
-          <div className="max-w-3xl flex flex-col">
+          <div className="flex max-w-3xl flex-col">
             {/* Eyebrow */}
             <div className="mb-6 inline-flex max-w-[229px] items-center gap-3 rounded-full border border-sky-500/20 bg-sky-500/5 px-4 py-2 dark:border-sky-400/20 dark:bg-sky-400/5 rtl:max-w-[162px]">
               <span aria-hidden="true" className="relative flex h-2.5 w-2.5">
@@ -61,7 +61,7 @@ export default function Hero() {
             <div className="mt-8 flex flex-col items-stretch gap-3 sm:flex-row sm:items-center sm:justify-center lg:justify-start">
               <a
                 href="#projects"
-                className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sky-500 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/20 transition-all duration-300 hover:bg-sky-600 hover:shadow-xl hover:shadow-sky-500/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 active:scale-[0.98]"
+                className="group inline-flex min-h-12 items-center justify-center gap-2 rounded-full bg-sky-700 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-700/20 transition-all duration-300 hover:bg-sky-800 hover:shadow-xl hover:shadow-sky-700/25 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 active:scale-[0.98]"
               >
                 {t("actions.projects")}
 
@@ -256,7 +256,7 @@ export default function Hero() {
           />
         </a>
       </Container>
-      <SectionDivider className="!absolute bottom-2 lg:-bottom-[14px] left-0 right-0" />
+      <SectionDivider className="!absolute bottom-2 left-0 right-0 lg:-bottom-[14px]" />
     </Section>
   );
 }

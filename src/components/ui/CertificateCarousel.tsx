@@ -39,24 +39,6 @@ export default function CertificateCarousel({
   };
 
   useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "ArrowLeft") {
-        goToPrevious();
-      }
-
-      if (event.key === "ArrowRight") {
-        goToNext();
-      }
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-
-    return () => {
-      window.removeEventListener("keydown", handleKeyDown);
-    };
-  }, []);
-
-  useEffect(() => {
     const timeoutId = window.setTimeout(() => {
       setIsImageLoading(true);
       setImageError(false);
@@ -70,7 +52,11 @@ export default function CertificateCarousel({
   }
 
   return (
-    <div aria-label={t("certificateNavigation")} className="relative">
+    <div
+      role="region"
+      aria-label={t("certificateNavigation")}
+      className="relative"
+    >
       <div className="grid gap-7 lg:grid-cols-[minmax(0,1.05fr)_minmax(280px,0.95fr)] lg:items-center">
         {/* Certificate preview */}
         <motion.div
@@ -184,7 +170,7 @@ export default function CertificateCarousel({
             href={activeCertificate.verificationUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-6 inline-flex items-center gap-2 rounded-xl bg-sky-500 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 dark:focus:ring-offset-slate-950"
+            className="mt-6 inline-flex min-h-12 items-center gap-2 rounded-xl bg-sky-700 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-sky-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950"
           >
             {t("viewCertificate")}
             <ExternalLink size={15} aria-hidden="true" />
@@ -193,20 +179,22 @@ export default function CertificateCarousel({
       </div>
 
       {/* Carousel controls */}
-      <div className="mt-7 flex items-center justify-between border-t border-slate-200 pt-5 dark:border-slate-800">
+      <div className="mt-7 flex items-center justify-between gap-2 border-t border-slate-200 pt-5 dark:border-slate-800">
+        {/* Previous */}
         <button
           type="button"
           onClick={goToPrevious}
           aria-label={t("previous")}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 transition-colors hover:border-sky-500/30 hover:text-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400 dark:hover:border-sky-400/30 dark:hover:text-sky-400 dark:focus:ring-offset-slate-950"
+          className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 transition-colors hover:border-sky-700 hover:text-sky-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-sky-400 dark:hover:text-sky-400 dark:focus-visible:ring-offset-slate-950"
         >
           <ChevronLeft size={18} aria-hidden="true" />
         </button>
 
+        {/* Certificate navigation */}
         <div
-          role="tablist"
+          role="group"
           aria-label={t("certificateNavigation")}
-          className="flex items-center gap-1.5"
+          className="mx-1 flex min-w-0 max-w-[24rem] flex-1 flex-wrap items-center justify-center"
         >
           {certificates.map((certificate, index) => {
             const isActive = index === activeIndex;
@@ -215,27 +203,32 @@ export default function CertificateCarousel({
               <button
                 key={certificate.key}
                 type="button"
-                role="tab"
-                aria-selected={isActive}
+                aria-pressed={isActive}
                 aria-label={t("goToCertificate", {
                   number: index + 1,
                 })}
                 onClick={() => goToCertificate(index)}
-                className={`h-1.5 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 dark:focus:ring-offset-slate-950 ${
-                  isActive
-                    ? "w-6 bg-sky-500"
-                    : "w-1.5 bg-slate-300 hover:bg-slate-400 dark:bg-slate-700 dark:hover:bg-slate-600"
-                }`}
-              />
+                className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full focus-visible:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950"
+              >
+                <span
+                  aria-hidden="true"
+                  className={`block rounded-full transition-all duration-300 ${
+                    isActive
+                      ? "h-1.5 w-6 bg-sky-700 dark:bg-sky-400"
+                      : "h-1.5 w-1.5 bg-slate-400 hover:bg-slate-600 dark:bg-slate-600 dark:hover:bg-slate-400"
+                  }`}
+                />
+              </button>
             );
           })}
         </div>
 
+        {/* Next */}
         <button
           type="button"
           onClick={goToNext}
           aria-label={t("next")}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-600 transition-colors hover:border-sky-500/30 hover:text-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-400 dark:hover:border-sky-400/30 dark:hover:text-sky-400 dark:focus:ring-offset-slate-950"
+          className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 transition-colors hover:border-sky-700 hover:text-sky-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-300 dark:hover:border-sky-400 dark:hover:text-sky-400 dark:focus-visible:ring-offset-slate-950"
         >
           <ChevronRight size={18} aria-hidden="true" />
         </button>

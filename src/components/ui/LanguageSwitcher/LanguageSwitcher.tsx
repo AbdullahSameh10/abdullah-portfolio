@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { ChevronDown, Languages,Globe } from "lucide-react";
+import { ChevronDown, Globe } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import LanguageMenu from "./LanguageMenu";
@@ -41,14 +41,15 @@ export default function LanguageSwitcher() {
 
     const handleKeyDown = (event: KeyboardEvent) => {
       switch (event.key) {
-        case "Escape":
+        case "Escape": {
           event.preventDefault();
           setOpen(false);
           buttonRef.current?.focus();
           break;
+        }
 
         case "ArrowDown":
-        case "ArrowUp":
+        case "ArrowUp": {
           event.preventDefault();
 
           const items = Array.from(
@@ -63,20 +64,18 @@ export default function LanguageSwitcher() {
             (item) => item === document.activeElement,
           );
 
-          let nextIndex = 0;
+          const direction = event.key === "ArrowDown" ? 1 : -1;
 
-          if (event.key === "ArrowDown") {
-            nextIndex =
-              activeIndex === -1 ? 0 : (activeIndex + 1) % items.length;
-          } else {
-            nextIndex =
-              activeIndex === -1
-                ? items.length - 1
-                : (activeIndex - 1 + items.length) % items.length;
-          }
+          const nextIndex =
+            activeIndex === -1
+              ? direction === 1
+                ? 0
+                : items.length - 1
+              : (activeIndex + direction + items.length) % items.length;
 
           items[nextIndex]?.focus();
           break;
+        }
       }
     };
 

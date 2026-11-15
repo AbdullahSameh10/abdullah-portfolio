@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa"
 import { useTranslation } from "react-i18next";
 import { motion, useReducedMotion } from "framer-motion";
 
-import { Container, Section, SectionDivider } from "@Components/layout";
+import { Container, Section } from "@Components/layout";
 import { SectionHeading } from "@Components/ui";
 
 import { useRef, useState } from "react";

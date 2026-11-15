@@ -104,10 +104,16 @@ export default function MobileMenu({ open, onClose }: MobileMenuProps) {
    * Reset expandable sections when the menu closes.
    */
   useEffect(() => {
-    if (!open) {
-      setLanguageOpen(false);
-      setThemeOpen(false);
-    }
+    const timeout = window.setTimeout(() => {
+      if (!open) {
+        setLanguageOpen(false);
+        setThemeOpen(false);
+      }
+    }, 0);
+
+    return () => {
+      window.clearTimeout(timeout);
+    };
   }, [open]);
 
   /*

@@ -147,7 +147,7 @@ export default function Projects() {
                   onClick={() => changeCategory(category)}
                   className={`inline-flex min-h-10 shrink-0 items-center justify-center gap-2 rounded-xl px-3.5 text-xs font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500 focus-visible:ring-offset-2 sm:px-4 sm:text-sm ${
                     isActive
-                      ? "bg-sky-500 text-white shadow-md shadow-sky-500/20"
+                      ? "bg-sky-700 text-white shadow-md shadow-sky-700/20"
                       : "text-slate-600 hover:bg-slate-100 hover:text-slate-950 dark:text-slate-400 dark:hover:bg-slate-900 dark:hover:text-white"
                   }`}
                 >
@@ -156,8 +156,8 @@ export default function Projects() {
                   <span
                     className={`text-[10px] tabular-nums ${
                       isActive
-                        ? "text-white/75"
-                        : "text-slate-400 dark:text-slate-500"
+                        ? "text-white"
+                        : "text-slate-500 dark:text-slate-400"
                     }`}
                   >
                     {count}

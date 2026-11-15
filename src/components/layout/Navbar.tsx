@@ -22,7 +22,7 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, [window.innerWidth]);
+  }, []);
 
   const { t } = useTranslation("navbar");
 

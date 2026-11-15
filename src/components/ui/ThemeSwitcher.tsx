@@ -1,5 +1,5 @@
 import { Moon, Sun } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import clsx from "clsx";
 import useTheme from "@Hooks/useTheme";
@@ -10,17 +10,6 @@ export default function ThemeSwitcher() {
   const { theme, resolvedTheme, setTheme } = useTheme();
 
   const [isAnimating, setIsAnimating] = useState(false);
-  const [displayedTheme, setDisplayedTheme] = useState(resolvedTheme);
-
-  /*
-   * Keep the displayed icon synchronized with the actual
-   * resolved theme when the theme changes externally.
-   */
-  useEffect(() => {
-    if (!isAnimating) {
-      setDisplayedTheme(resolvedTheme);
-    }
-  }, [resolvedTheme, isAnimating]);
 
   const toggleTheme = () => {
     if (isAnimating) return;
@@ -35,7 +24,6 @@ export default function ThemeSwitcher() {
      */
     window.setTimeout(() => {
       setTheme(nextTheme);
-      setDisplayedTheme(nextTheme);
     }, 180);
 
     /*
@@ -46,7 +34,7 @@ export default function ThemeSwitcher() {
     }, 500);
   };
 
-  const isLight = displayedTheme === "light";
+  const isLight = resolvedTheme === "light";
   const Icon = isLight ? Sun : Moon;
 
   return (
@@ -82,7 +70,7 @@ export default function ThemeSwitcher() {
         )}
       >
         <Icon
-          key={displayedTheme}
+          key={resolvedTheme}
           size={18}
           strokeWidth={2.2}
           className="transition-colors duration-200"
