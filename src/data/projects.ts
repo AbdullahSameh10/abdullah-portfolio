@@ -1,6 +1,10 @@
 import type { Project } from "@Types/Project.types";
 
 import calorieTrackerImage from "@Assets/Calorie Tracker.png";
+import cubMartImage from "@Assets/CubMart.png";
+import exclusiveImage from "@Assets/exclusive.png";
+import kanbanBoardImage from "@Assets/kanban board.png";
+import progBlogImage from "@Assets/prog blog.png";
 import tkableImage from "@Assets/Tkable.png";
 import restaurantImage from "@Assets/restaurant.jpg";
 
@@ -18,6 +22,7 @@ const projects: Project[] = [
     technologies: ["react", "typescript", "vite", "tailwind", "firebase"],
     githubUrl: "https://github.com/AbdullahSameh10/Exclusive",
     liveUrl: "https://exclusive-abdullahsameh10.vercel.app/",
+    image: exclusiveImage,
     featured: true,
   },
 
@@ -29,6 +34,7 @@ const projects: Project[] = [
     previewType: "web",
     technologies: ["react", "typescript", "vite", "tailwind"],
     githubUrl: "https://github.com/AbdullahSameh10/Prog-Blog",
+    image: progBlogImage,
     liveUrl: "https://prog-blog.vercel.app/",
   },
 
@@ -52,6 +58,7 @@ const projects: Project[] = [
     technologies: ["react", "javascript", "vite", "tailwind"],
     githubUrl: "https://github.com/AbdullahSameh10/Kanban-Board",
     liveUrl: "https://kanban-board-abdullahsameh10.vercel.app/",
+    image: kanbanBoardImage,
   },
 
   {
@@ -63,6 +70,7 @@ const projects: Project[] = [
     technologies: ["html", "css", "javascript", "bootstrap"],
     githubUrl: "https://github.com/AbdullahSameh10/CubMart",
     liveUrl: "https://abdullahsameh10.github.io/CubMart/",
+    image: cubMartImage,
   },
 
   // ============================================================

@@ -24,21 +24,6 @@ const experience: Experience[] = [
   },
 
   {
-    key: "futureMakersKids",
-    type: "program",
-    startYear: 2020,
-    endYear: 2023,
-    technologies: [
-      "programming",
-      "c",
-      "cpp",
-      "python",
-      "electronics",
-      "arduino",
-    ],
-  },
-
-  {
     key: "deci",
     type: "program",
     startYear: 2024,
@@ -50,6 +35,23 @@ const experience: Experience[] = [
       "css",
       "figma",
       "wireframing",
+    ],
+  },
+
+  {
+    key: "almdrasa",
+    type: "learning",
+    startYear: 2025,
+    endYear: 2026,
+    technologies: [
+      "python",
+      "java",
+      "dataStructures",
+      "html",
+      "css",
+      "javascript",
+      "react",
+      "typescript",
     ],
   },
 
@@ -68,19 +70,17 @@ const experience: Experience[] = [
   },
 
   {
-    key: "almdrasa",
-    type: "learning",
-    startYear: 2025,
-    endYear: 2026,
+    key: "futureMakersKids",
+    type: "program",
+    startYear: 2020,
+    endYear: 2023,
     technologies: [
+      "programming",
+      "c",
+      "cpp",
       "python",
-      "java",
-      "dataStructures",
-      "html",
-      "css",
-      "javascript",
-      "react",
-      "typescript",
+      "electronics",
+      "arduino",
     ],
   },
 ];
